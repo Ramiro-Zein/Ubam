@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="container">
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <div class="input-box">
+                     <input type="text" required placeholder="">
+                    <label>Usuario</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required placeholder="">
+                    <label>Contraseña</label>
+                </div>
+                <button type="button" class="login-btn" onclick="window.location.href='welcome'">Entrar</button>
+                <p class="register-text">¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.web\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|solutionrelative:aspireapp1.web\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.web\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|solutionrelative:aspireapp1.web\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.web\\wwwroot\\favicon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|solutionrelative:aspireapp1.web\\wwwroot\\favicon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|solutionrelative:aspireapp1.web\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}|AspireApp1.Web\\AspireApp1.Web.csproj|solutionrelative:aspireapp1.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "AspireApp1.Web\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "AspireApp1.Web\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-28T14:44:56.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "favicon.png - PNG [32x32, 32 bits, PNG]",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\favicon.png",
+              "RelativeDocumentMoniker": "AspireApp1.Web\\wwwroot\\favicon.png",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\favicon.png - PNG [32x32, 32 bits, PNG]",
+              "RelativeToolTip": "AspireApp1.Web\\wwwroot\\favicon.png - PNG [32x32, 32 bits, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-09-28T14:44:08.707Z",
+              "EditorCaption": " - PNG [32x32, 32 bits, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "AspireApp1.Web\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "AspireApp1.Web\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T14:42:54.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "AspireApp1.Web\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\app.css",
+              "RelativeToolTip": "AspireApp1.Web\\wwwroot\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-28T14:42:26.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "AspireApp1.Web\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "AspireApp1.Web\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T14:08:11.478Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

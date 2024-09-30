@@ -1,0 +1,55 @@
+﻿@page "/welcome/solicitante"
+@inject HttpClient Http
+
+<PageTitle>Solicitante</PageTitle>
+
+<h3>Solicitante</h3>
+
+@if (_solicitantes == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else if (_solicitantes.Count == 0)
+{
+    <p>No users found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var solicitante in _solicitantes)
+        {
+            <tr>
+                <td>@solicitante.Nombre_Solicitante</td>
+                <td>@solicitante.Fecha_Nacimiento_Solicitante</td>
+                <td>@solicitante.Pagos</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Models.Solicitante>? _solicitantes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _solicitantes = await Http.GetFromJsonAsync<List<Models.Solicitante>>("http://localhost:5561/api/solicitantes");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al obtener los usuarios: {ex.Message}");
+        } 
+    }
+
+}
