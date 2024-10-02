@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\database-context\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\models\\solicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\models\\solicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\models\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{305D7375-5BF6-4AE7-A728-297AB5509938}|AspireApp1.AppHost\\AspireApp1.AppHost.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{305D7375-5BF6-4AE7-A728-297AB5509938}|AspireApp1.AppHost\\AspireApp1.AppHost.csproj|solutionrelative:aspireapp1.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|c:\\users\\sopor\\onedrive\\documentos\\pr\u00E1cticas\\zein\\net\\aspireapp1\\aspireapp1.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29917A6C-A416-4671-83E8-4CA0308AEC77}|AspireApp1.ApiService\\AspireApp1.ApiService.csproj|solutionrelative:aspireapp1.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\User.cs",
-              "RelativeDocumentMoniker": "AspireApp1.ApiService\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\User.cs*",
-              "RelativeToolTip": "AspireApp1.ApiService\\Models\\User.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs",
+              "RelativeToolTip": "AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:01:49.067Z",
+              "WhenOpened": "2024-10-02T14:28:21.487Z",
               "EditorCaption": ""
             },
             {
@@ -47,37 +59,76 @@
               "Title": "Solicitante.cs",
               "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Solicitante.cs",
               "RelativeDocumentMoniker": "AspireApp1.ApiService\\Models\\Solicitante.cs",
-              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Solicitante.cs*",
-              "RelativeToolTip": "AspireApp1.ApiService\\Models\\Solicitante.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Solicitante.cs",
+              "RelativeToolTip": "AspireApp1.ApiService\\Models\\Solicitante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T13:57:24.708Z",
+              "WhenOpened": "2024-10-02T14:27:53.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Pago.cs",
               "RelativeDocumentMoniker": "AspireApp1.ApiService\\Models\\Pago.cs",
               "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Pago.cs*",
               "RelativeToolTip": "AspireApp1.ApiService\\Models\\Pago.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:01:01.813Z",
+              "WhenOpened": "2024-10-02T14:27:41.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs",
-              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs*",
-              "RelativeToolTip": "AspireApp1.ApiService\\Database-Context\\DatabaseContext.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "AspireApp1.ApiService\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Models\\Usuario.cs",
+              "RelativeToolTip": "AspireApp1.ApiService\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T13:57:35.323Z",
+              "WhenOpened": "2024-10-02T14:27:40.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\appsettings.json",
+              "RelativeDocumentMoniker": "AspireApp1.ApiService\\appsettings.json",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\appsettings.json",
+              "RelativeToolTip": "AspireApp1.ApiService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-02T14:27:34.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.AppHost\\Program.cs",
+              "RelativeDocumentMoniker": "AspireApp1.AppHost\\Program.cs",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.AppHost\\Program.cs",
+              "RelativeToolTip": "AspireApp1.AppHost\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T14:27:28.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Program.cs",
+              "RelativeDocumentMoniker": "AspireApp1.ApiService\\Program.cs",
+              "ToolTip": "C:\\Users\\sopor\\OneDrive\\Documentos\\Pr\u00E1cticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\Program.cs",
+              "RelativeToolTip": "AspireApp1.ApiService\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T14:26:37.894Z",
               "EditorCaption": ""
             }
           ]

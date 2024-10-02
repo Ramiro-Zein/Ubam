@@ -1,4 +1,6 @@
 using AspireApp1.ApiService.AppDbContext;
+using AspireApp1.ApiService.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -40,26 +42,20 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 });
 
-app.MapGet("/api/users", async (DatabaseContext dbContext) =>
+app.MapGet("/api/solicitantes", ([FromServices] DatabaseContext dbContext) =>
 {
-    var users = await dbContext.Users.ToListAsync();
-    return Results.Json(users);
+    return Task.FromResult(Results.Json(dbContext
+        .Solicitantes
+        .Include(s => s.Pagos)
+    ));
 });
 
-app.MapGet("/api/solicitantes", async (DatabaseContext dbContext) =>
+app.MapGet("/api/pagos", ([FromServices] DatabaseContext dbContext) =>
 {
-    var solicitantes = await dbContext.Solicitante.ToListAsync();
-    return Results.Json(solicitantes);
-});
-
-app.MapGet("/create-tables", async ([FromServices] DatabaseContext dbContext) =>
-{
-    dbContext.Database.EnsureCreated();
-    return Results.Ok("Base de datos creada: " + dbContext.Database.IsSqlServer());
+    return Task.FromResult(Results.Json(dbContext.Pagos));
 });
 
 app.MapDefaultEndpoints();
-
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

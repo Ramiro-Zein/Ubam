@@ -1,4 +1,4 @@
-﻿@page "/welcome/solicitante"
+﻿@page "/solicitante"
 @inject HttpClient Http
 
 <PageTitle>Solicitante</PageTitle>
@@ -22,15 +22,36 @@ else
         <tr>
             <th>Id</th>
             <th>Name</th>
+            <th>Birth Date</th>
+            <th>Pagos</th>
         </tr>
         </thead>
         <tbody>
         @foreach (var solicitante in _solicitantes)
         {
             <tr>
+                <td>@solicitante.Id_Solicitante</td>
                 <td>@solicitante.Nombre_Solicitante</td>
-                <td>@solicitante.Fecha_Nacimiento_Solicitante</td>
-                <td>@solicitante.Pagos</td>
+                <td>@solicitante.Fecha_Nacimiento_Solicitante.ToShortDateString()</td>
+                <td>
+                    @if (solicitante.Pagos != null && solicitante.Pagos.Any())
+                    {
+                        <ul>
+                            @foreach (var pago in solicitante.Pagos)
+                            {
+                                <li>
+                                    <strong>Monto:</strong> @pago.Monto_Pago, 
+                                    <strong>Cuenta:</strong> @pago.Cuenta_Pago, 
+                                    <strong>Fecha Límite:</strong> @pago.Fecha_Limite_Pago.ToShortDateString()
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <em>No hay pagos disponibles</em>
+                    }
+                </td>
             </tr>
         }
         </tbody>
@@ -48,8 +69,7 @@ else
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error al obtener los usuarios: {ex.Message}");
+            Console.WriteLine($"Error al obtener los solicitantes: {ex.Message}");
         } 
     }
-
 }
