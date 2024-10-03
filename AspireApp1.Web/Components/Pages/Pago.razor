@@ -1,0 +1,57 @@
+﻿@page "/pago"
+@inject HttpClient Http
+
+<PageTitle>Pagos</PageTitle>
+
+<h3>Pagos</h3>
+
+@if (_pagos == null)
+{
+    <p><em>Loading...</em></p>
+}
+else if (_pagos.Count == 0)
+{
+    <p>No payments found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Monto</th>
+            <th>Cuenta</th>
+            <th>Banco</th>
+            <th>Concepto</th>
+            <th>Fecha Límite</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var pago in _pagos)
+        {
+            <tr>
+                <td>$ @pago.Monto_Pago</td>
+                <td>@pago.Cuenta_Pago</td>
+                <td>@pago.Banco_Pago</td>
+                <td>@pago.Concepto_Pago</td>
+                <td>@pago.Fecha_Limite_Pago.ToShortDateString()</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Models.Pago>? _pagos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _pagos = await Http.GetFromJsonAsync<List<Models.Pago>>("http://localhost:5561/api/pagos");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al obtener los pagos: {ex.Message}");
+        } 
+    }
+}

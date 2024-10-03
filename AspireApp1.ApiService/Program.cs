@@ -1,4 +1,5 @@
-using AspireApp1.ApiService.AppDbContext;
+using System.Text.Json.Serialization;
+using AspireApp1.ApiService.Database_Context;
 using AspireApp1.ApiService.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +15,7 @@ builder.Services.AddProblemDetails();
 
 builder.Services.AddSqlServer<DatabaseContext>(builder.Configuration.GetConnectionString("CreateTables"));
 
-builder.Services.AddDbContext<AspireApp1.ApiService.AppDbContext.DatabaseContext>(options =>
+builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
