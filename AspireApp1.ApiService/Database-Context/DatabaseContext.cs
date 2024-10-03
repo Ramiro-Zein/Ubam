@@ -9,6 +9,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
     public DbSet<Usuario> Users { get; set; }
     public DbSet<Solicitante> Solicitantes { get; set; }
     public DbSet<Pago> Pagos { get; set; }
+    public DbSet<Alumno> Alumnos { get; set; }
 
     // Initial configuration in database
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -118,8 +119,24 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         modelBuilder.Entity<Usuario>(usuario =>
         {
             usuario.ToTable("Usuario");
-            usuario.HasKey(p => p.Id);
-            usuario.Property(p => p.Nombre).IsRequired().HasMaxLength(200);
+            usuario.HasKey(p => p.Id_Usuario);
+            usuario.Property(p => p.Nombre_Usuario).IsRequired().HasMaxLength(200);
+            usuario.Property(p => p.Apellido_Paterno_Usuario);
+            usuario.Property(p => p.Apellido_Materno_Usuario);
+            usuario.Property(p => p.FechaNacimiento_Usuario).IsRequired();
+            usuario.Property(p => p.Contrasena_Usuario).IsRequired().HasMaxLength(200);
+        });
+
+        modelBuilder.Entity<Alumno>(alumno =>
+        {
+            alumno.ToTable("Alumno");
+            alumno.HasKey(p => p.Id_Alumno);
+            alumno.Property(p => p.Nombre_Alumno).IsRequired().HasMaxLength(200);
+            alumno.Property(p => p.Apellido_Paterno_Alumno);
+            alumno.Property(p => p.Apellido_Materno_Alumno);
+            alumno.Property(p => p.Fecha_Nacimiento_Alumno);
+            alumno.Property(p => p.Sexo_Alumno).IsRequired();
+            alumno.Property(p => p.Carrera_Alumno).IsRequired();
         });
     }
 }

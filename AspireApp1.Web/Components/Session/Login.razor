@@ -1,5 +1,4 @@
 ﻿@page "/login"
-
 @layout Layout.EmptyLayout
 
 <div class="page">
@@ -8,11 +7,11 @@
             <h2>Iniciar Sesión</h2>
             <form>
                 <div class="input-box">
-                    <input type="text" @bind="username" required placeholder="Ingrese su usuario">
+                    <input type="text" required placeholder="">
                     <label>Usuario</label>
                 </div>
                 <div class="input-box">
-                    <input type="password" @bind="password" required placeholder="Ingrese su contraseña">
+                    <input type="password" required placeholder="">
                     <label>Contraseña</label>
                 </div>
                 <button type="button" class="login-btn" @onclick="Entrar">Entrar</button>
