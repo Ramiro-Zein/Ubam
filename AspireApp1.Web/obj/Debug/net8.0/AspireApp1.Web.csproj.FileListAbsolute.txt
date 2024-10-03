@@ -65,3 +65,6 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\ref\AspireApp1.Web.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Session\Login.razor.rz.scp.css
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\bin\Debug\net8.0\System.Security.Permissions.dll

@@ -5,16 +5,19 @@ namespace AspireApp1.ApiService.Database_Context;
 
 public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbContext(options)
 {
+    // Get all classes
     public DbSet<Usuario> Users { get; set; }
     public DbSet<Solicitante> Solicitantes { get; set; }
     public DbSet<Pago> Pagos { get; set; }
 
+    // Initial configuration in database
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        // Solicitante
+        // Declare data list
         List<Solicitante> solicitantesInit = new List<Solicitante>();
+        // Initial data
         solicitantesInit.Add(new Solicitante() 
         { 
             Id_Solicitante = Guid.Parse("402c2777-24a5-43ba-b05e-5ffe9a33b56a"), 
@@ -36,7 +39,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             
         modelBuilder.Entity<Solicitante>(solicitante =>
         {
-            solicitante.ToTable("Solicitante");
+            solicitante.ToTable("Solicitante"); // Table name
             solicitante.HasKey(p => p.Id_Solicitante);
             solicitante.HasMany(s => s.Pagos)
                 .WithOne(p => p.Solicitante)
@@ -44,10 +47,10 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
                 .OnDelete(DeleteBehavior.Cascade);
             solicitante.Property(p => p.Nombre_Solicitante).IsRequired().HasMaxLength(255);
             solicitante.Property(p => p.Fecha_Nacimiento_Solicitante).IsRequired();
-            solicitante.HasData(solicitantesInit);
+            solicitante.HasData(solicitantesInit); // Add initial data
         });
             
-        // Pago
+        // Initial data
         List<Pago> pagosInit = new List<Pago>();
         pagosInit.Add(new Pago() 
         { 
@@ -109,10 +112,9 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             pago.Property(p => p.Banco_Pago).IsRequired().HasMaxLength(50);
             pago.Property(p => p.Concepto_Pago).IsRequired().HasMaxLength(50);
             pago.Property(p => p.Fecha_Limite_Pago).IsRequired();
-            pago.HasData(pagosInit);
+            pago.HasData(pagosInit); // Add initial data
         });
-
-        // Usuario
+        
         modelBuilder.Entity<Usuario>(usuario =>
         {
             usuario.ToTable("Usuario");

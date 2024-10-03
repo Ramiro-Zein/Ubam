@@ -15,6 +15,7 @@ builder.Services.AddProblemDetails();
 
 builder.Services.AddSqlServer<DatabaseContext>(builder.Configuration.GetConnectionString("CreateTables"));
 
+// Database connection
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
