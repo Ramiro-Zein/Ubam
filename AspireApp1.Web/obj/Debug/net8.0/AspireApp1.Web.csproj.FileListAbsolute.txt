@@ -72,3 +72,4 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Pago.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Alumno.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\AspireApp1.Web.sourcelink.json

@@ -50,3 +50,4 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.App
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.AppHost\obj\Debug\net8.0\AspireApp1.AppHost.pdb
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.AppHost\obj\Debug\net8.0\AspireApp1.AppHost.genruntimeconfig.cache
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.AppHost\obj\Debug\net8.0\ref\AspireApp1.AppHost.dll
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.AppHost\obj\Debug\net8.0\AspireApp1.AppHost.sourcelink.json
