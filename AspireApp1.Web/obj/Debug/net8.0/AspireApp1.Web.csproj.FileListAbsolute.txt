@@ -68,3 +68,7 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Solicitante.razor.rz.scp.css
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Pago.razor.rz.scp.css
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Alumno.razor.rz.scp.css
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css

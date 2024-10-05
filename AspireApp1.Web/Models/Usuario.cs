@@ -1,4 +1,4 @@
-﻿namespace AspireApp1.ApiService.Models;
+﻿namespace AspireApp1.Web.Models;
 
 // User class
 public class Usuario
@@ -9,5 +9,4 @@ public class Usuario
     public string Apellido_Materno_Usuario { get; set; }
     public DateTime FechaNacimiento_Usuario { get; set; }
     public string Contrasena_Usuario { get; set; }
-    
 }

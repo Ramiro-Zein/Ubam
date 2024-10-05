@@ -1,0 +1,59 @@
+﻿h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td:nth-child(4),
+.table td:nth-child(5),
+.table td:nth-child(6),
+.table td:nth-child(8),
+.table td:nth-child(9) {
+    color: #555555;
+}
+
+.nav-item ::deep a {
+    color: whitesmoke;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.nav-item ::deep a:hover {
+    background-color: rgba(30, 30, 30);
+    color: white;
+}

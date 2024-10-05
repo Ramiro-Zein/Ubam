@@ -1,0 +1,44 @@
+﻿h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr:first-child {
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table thead tr:nth-child(2) {
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+

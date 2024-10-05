@@ -1,4 +1,4 @@
-﻿namespace AspireApp1.ApiService.Models;
+﻿namespace AspireApp1.Web.Models;
 
 public class Alumno
 {

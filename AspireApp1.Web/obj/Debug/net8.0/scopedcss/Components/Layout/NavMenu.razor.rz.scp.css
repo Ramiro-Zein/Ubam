@@ -3,7 +3,6 @@
     cursor: pointer;
     width: 3.5rem;
     height: 2.5rem;
-    color: white;
     position: absolute;
     top: 0.5rem;
     right: 1rem;
@@ -17,10 +16,11 @@
 
 .top-row[b-log5nhebbu] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand[b-log5nhebbu] {
+    color: whitesmoke;
     font-weight: bold;
     letter-spacing: 1px;
     padding: 0px;
@@ -54,30 +54,30 @@
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-log5nhebbu] {
-        padding-top: 1rem;
-    }
+.nav-item:first-of-type[b-log5nhebbu] {
+    padding-top: 1rem;
+}
 
-    .nav-item:last-of-type[b-log5nhebbu] {
-        padding-bottom: 1rem;
-    }
+.nav-item:last-of-type[b-log5nhebbu] {
+    padding-bottom: 1rem;
+}
 
-    .nav-item[b-log5nhebbu]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
+.nav-item[b-log5nhebbu]  a {
+    color: #d7d7d7;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
 
 .nav-item[b-log5nhebbu]  a.active {
-    background-color: rgba(255,255,255,0.37);
+    background-color: rgba(255, 255, 255, 0.37);
     color: white;
 }
 
 .nav-item[b-log5nhebbu]  a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
 
@@ -95,10 +95,7 @@
     }
 
     .nav-scrollable[b-log5nhebbu] {
-        /* Never collapse the sidebar for wide screens */
         display: block;
-
-        /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }

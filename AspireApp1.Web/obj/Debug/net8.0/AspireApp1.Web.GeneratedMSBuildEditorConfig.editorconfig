@@ -30,20 +30,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Pago.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQYWdvLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Solicitante.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTb2xpY2l0YW50ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Routes.razor]
@@ -61,6 +49,22 @@ build_metadata.AdditionalFiles.CssScope = b-5ypfzqnejq
 [C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-log5nhebbu
+
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Alumno.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-kwbnykdiej
+
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-m650tipl7r
+
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Pago.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQYWdvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-p94zwba9g6
+
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Solicitante.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTb2xpY2l0YW50ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-y7z71yyvxw
 
 [C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Session/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZXNzaW9uXExvZ2luLnJhem9y

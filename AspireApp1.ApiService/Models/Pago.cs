@@ -8,7 +8,7 @@ public class Pago
     public string Cuenta_Pago { get; set; }
     public string Sucursal_Pago { get; set; }
     public string Referencia_Pago { get; set; }
-    public string Banco_Pago { get; set; }
+    public Banco Banco_Pago { get; set; }
     public string Concepto_Pago { get; set; }
     public DateTime Fecha_Limite_Pago { get; set; }
 
@@ -17,4 +17,10 @@ public class Pago
 
     [JsonIgnore]
     public Solicitante Solicitante { get; set; }
+    
+    public enum Banco
+    {
+        BBVA,
+        CitiBanamex
+    }
 }

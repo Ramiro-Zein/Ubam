@@ -1,0 +1,78 @@
+﻿@page "/auth/alumnos"
+@inject HttpClient Http
+
+<PageTitle>Alumno</PageTitle>
+
+<div class="d-flex justify-content-between align-items-center w-100">
+    <h3>Alumno</h3>
+    <div class="nav-item">
+        <NavLink class="nav-link" href="auth/solicitante-create">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg> Alumnos
+        </NavLink>
+    </div>
+</div>
+
+
+@if (_alumnos == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else if (_alumnos.Count == 0)
+{
+    <p>No students found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Nombre del alumno</th>
+            <th>Apellido paterno</th>
+            <th>Apellido materno</th>
+            <th>Fecha de nacimiento</th>
+            <th>Sexo</th>
+            <th>Carrera</th>
+            <th>CURP</th>
+            <th>Bachillerato</th>
+            <th>Estado</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var alumno in _alumnos)
+        {
+            <tr>
+                <td data-label="Nombre del alumno">@alumno.Nombre_Alumno</td>
+                <td data-label="Apellido paterno">@alumno.Apellido_Paterno_Alumno</td>
+                <td data-label="Apellido materno">@alumno.Apellido_Materno_Alumno</td>
+                <td data-label="Fecha de nacimiento">@alumno.Fecha_Nacimiento_Alumno.ToShortDateString()</td>
+                <td data-label="Sexo">@alumno.Sexo_Alumno</td>
+                <td data-label="Carrera">@alumno.Carrera_Alumno</td>
+                <td data-label="CURP">@alumno.Curp_Alumno</td>
+                <td data-label="Bachillerato">@alumno.Bachillerato_Alumno</td>
+                <td data-label="Estado">@alumno.Estado_Alumno</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Models.Alumno>? _alumnos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _alumnos = await Http.GetFromJsonAsync<List<Models.Alumno>>("http://localhost:5561/api/alumnos");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al obtener los pagos: {ex.Message}");
+        }
+    }
+
+}
