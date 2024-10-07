@@ -10,3 +10,4 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Ser
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ServiceDefaults\obj\Debug\net8.0\refint\AspireApp1.ServiceDefaults.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.pdb
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ServiceDefaults\obj\Debug\net8.0\ref\AspireApp1.ServiceDefaults.dll
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.sourcelink.json
