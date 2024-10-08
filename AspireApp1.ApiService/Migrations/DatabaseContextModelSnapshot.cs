@@ -148,7 +148,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 1,
                             Concepto_Pago = "Inscripción",
                             Cuenta_Pago = "1234567890",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 3, 8, 34, 2, 161, DateTimeKind.Local).AddTicks(6352),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 7, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7440),
                             Monto_Pago = 1800m,
                             Referencia_Pago = "REF12345",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56a"),
@@ -160,7 +160,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 0,
                             Concepto_Pago = "Colegiatura",
                             Cuenta_Pago = "0987654321",
-                            Fecha_Limite_Pago = new DateTime(2024, 10, 19, 8, 34, 2, 161, DateTimeKind.Local).AddTicks(6394),
+                            Fecha_Limite_Pago = new DateTime(2024, 10, 23, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7487),
                             Monto_Pago = 2000m,
                             Referencia_Pago = "REF67890",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56b"),
@@ -172,7 +172,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 1,
                             Concepto_Pago = "Materiales",
                             Cuenta_Pago = "1122334455",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 18, 8, 34, 2, 161, DateTimeKind.Local).AddTicks(6398),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 22, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7493),
                             Monto_Pago = 1700m,
                             Referencia_Pago = "REF11223",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56c"),
@@ -184,7 +184,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 0,
                             Concepto_Pago = "Inscripción",
                             Cuenta_Pago = "1234567890",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 3, 8, 34, 2, 161, DateTimeKind.Local).AddTicks(6402),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 7, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7504),
                             Monto_Pago = 1900m,
                             Referencia_Pago = "REF12345",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56c"),
@@ -268,9 +268,9 @@ namespace AspireApp1.ApiService.Migrations
                             Id_Usuario = new Guid("702c2777-24a5-43ba-b05e-5ffe9a33b56a"),
                             Apellido_Materno_Usuario = "Hernández",
                             Apellido_Paterno_Usuario = "García",
-                            Contrasena_Usuario = "password123",
+                            Contrasena_Usuario = "1234",
                             FechaNacimiento_Usuario = new DateTime(1990, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Nombre_Usuario = "Luis"
+                            Nombre_Usuario = "Zein"
                         },
                         new
                         {

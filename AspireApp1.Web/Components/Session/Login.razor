@@ -7,14 +7,16 @@
     <div class="container">
         <div class="login-box">
             <h2>Iniciar Sesión</h2>
-            @if (!string.IsNullOrEmpty(mensajeAlerta))
-            {
-                <div class="alert alert-info">@mensajeAlerta</div>
+            
+            @if(_mensajeAlerta != ""){
+                <div class="alert alert-danger">@_mensajeAlerta</div>
             }
-            <form>
+            
+
+            <EditForm >
                 <div class="input-box">
                     <input type="text" @bind="_username" required placeholder="">
-                    <label>Usuario</label>
+                    <label>Usuario</label>a
                 </div>
                 <div class="input-box">
                     <input type="password" @bind="_password" required placeholder="">
@@ -22,7 +24,7 @@
                 </div>
                 <button type="button" class="login-btn" @onclick="Entrar">Entrar</button>
                 <p class="register-text">¿No tienes una cuenta? <a href="#">Regístrate</a></p>
-            </form>
+            </EditForm >
         </div>
     </div>
 </div>
@@ -30,13 +32,13 @@
 @code {
     private string? _username;
     private string? _password;
-    private string mensajeAlerta;
+    private string? _mensajeAlerta = "";
 
     private async Task Entrar()
     {
-        if (string.IsNullOrWhiteSpace(_username) || string.IsNullOrWhiteSpace(_password))
+        if (_username?.Trim() == "" || _password?.Trim() == "")
         {
-            mensajeAlerta = "Por favor, ingresa usuario y contraseña.";
+            _mensajeAlerta = "Por favor, ingresa usuario y contraseña.";
             return;
         }
 
@@ -46,13 +48,14 @@
         if (response.IsSuccessStatusCode)
         {
             var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
-            mensajeAlerta = $"Bienvenido, {_username}!";
+            _mensajeAlerta = $"Bienvenido, {_username}!";
             Navigation.NavigateTo("/auth/home");
         }
         else
         {
-            mensajeAlerta = "Usuario o contraseña incorrectos.";
+            _mensajeAlerta = "Usuario o contraseña incorrectos.";
         }
+        
     }
 
     private class LoginResponse

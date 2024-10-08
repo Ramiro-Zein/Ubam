@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/0PZmb3/D8qpl1DCLWGRtuyGHaKRL+ru+8OWNTjpdVA=",
+  "Hash": "lAZU0dqWraVK0Vd+Ju1xhHv9n7kxUtZ//hgYh1vwGp8=",
   "Source": "AspireApp1.Web",
   "BasePath": "_content/AspireApp1.Web",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\js\\JQuery.js",
+      "SourceId": "AspireApp1.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "BasePath": "_content/AspireApp1.Web",
+      "RelativePath": "js/JQuery.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JQuery.js"
     }
   ]
 }

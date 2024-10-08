@@ -9,8 +9,19 @@ namespace AspireApp1.ApiService.Controllers;
 public class SolicitanteController : ControllerBase
 {
     private readonly DatabaseContext _dbContext;
-    public SolicitanteController(DatabaseContext dbContext) { _dbContext = dbContext; }
+    public SolicitanteController(DatabaseContext dbContext) 
+    { 
+        _dbContext = dbContext; 
+    }
 
     [HttpGet]
-    public async Task<IActionResult> GetSolicitantes() => Ok(await _dbContext.Solicitantes.ToListAsync());
+    public async Task<IActionResult> GetSolicitantes()
+    {
+        var solicitantes = await _dbContext
+            .Solicitantes
+            .Include(s => s.Pagos)
+            .ToListAsync();
+
+        return Ok(solicitantes);
+    }
 }

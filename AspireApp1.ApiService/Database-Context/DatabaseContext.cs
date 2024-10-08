@@ -122,11 +122,11 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         usuariosInit.Add(new Usuario
         {
             Id_Usuario = Guid.Parse("702c2777-24a5-43ba-b05e-5ffe9a33b56a"),
-            Nombre_Usuario = "Luis",
+            Nombre_Usuario = "Zein",
             Apellido_Paterno_Usuario = "García",
             Apellido_Materno_Usuario = "Hernández",
             FechaNacimiento_Usuario = new DateTime(1990, 5, 12),
-            Contrasena_Usuario = "password123"
+            Contrasena_Usuario = "1234"
         });
         
         usuariosInit.Add(new Usuario

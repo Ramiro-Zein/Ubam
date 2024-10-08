@@ -3,7 +3,7 @@
 public class Alumno
 {
     public Guid Id_Alumno { get; set; }
-    public string Nombre_Alumno { get; set; }
+    public string? Nombre_Alumno { get; set; }
     public string Apellido_Paterno_Alumno { get; set; }
     public string Apellido_Materno_Alumno { get; set; }
     public DateTime Fecha_Nacimiento_Alumno { get; set; }
