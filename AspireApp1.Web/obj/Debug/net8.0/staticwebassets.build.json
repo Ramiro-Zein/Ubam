@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lAZU0dqWraVK0Vd+Ju1xhHv9n7kxUtZ//hgYh1vwGp8=",
+  "Hash": "+BL1HXk08k1vscLjL+1W4ea3CE87m19PiSzHmCimmI4=",
   "Source": "AspireApp1.Web",
   "BasePath": "_content/AspireApp1.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AspireApp1.Web\\wwwroot",
       "Source": "AspireApp1.Web",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\",
       "BasePath": "_content/AspireApp1.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AspireApp1.Web.styles.css",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AspireApp1.Web.styles.css",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "AspireApp1.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AspireApp1.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AspireApp1.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AspireApp1.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AspireApp1.Web.bundle.scp.css",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "AspireApp1.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AspireApp1.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AspireApp1.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\app.css",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\favicon.png",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\js\\JQuery.js",
+      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\js\\JQuery.js",
       "SourceId": "AspireApp1.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\wwwroot\\",
       "BasePath": "_content/AspireApp1.Web",
       "RelativePath": "js/JQuery.js",
       "AssetKind": "All",

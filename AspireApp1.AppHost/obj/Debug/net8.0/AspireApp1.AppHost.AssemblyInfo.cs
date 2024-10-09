@@ -17,14 +17,13 @@ using System.Reflection;
     "t\\")]
 [assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.1.0\\tools\\ex" +
     "t\\bin\\")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.AppHo" +
-    "st")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Dashboard.Sdk.win-x64\\8.1.0\\tools\\Aspire.Das" +
     "hboard.exe")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29bcd470b3c9b993cbd1a2fd211a502a8cb73ed7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf302b48725e5aa418b61306ddf16df1e6b6fc36")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspireApp1.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

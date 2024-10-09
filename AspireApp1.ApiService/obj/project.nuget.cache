@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cJGGAyFOn0I=",
+  "dgSpecHash": "G3XyTk7CYKQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
+  "projectFilePath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sopor\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\sopor\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q9cUoEAcRLQ=",
+  "dgSpecHash": "3rZqe2bK4eo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\AspireApp1.Web.csproj",
+  "projectFilePath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\AspireApp1.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sopor\\.nuget\\packages\\google.protobuf\\3.22.5\\google.protobuf.3.22.5.nupkg.sha512",
     "C:\\Users\\sopor\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",

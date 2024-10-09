@@ -75,7 +75,7 @@ else
     {
         try
         {
-            _solicitantes = await Http.GetFromJsonAsync<List<Models.Solicitante>>("http://localhost:5561/api/solicitantes");
+            _solicitantes = await Http.GetFromJsonAsync<List<Models.Solicitante>>("http://localhost:5561/api/solicitante");
         }
         catch (Exception ex)
         {

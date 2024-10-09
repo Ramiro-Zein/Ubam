@@ -9,63 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AspireApp1.Web
 build_property.RootNamespace = AspireApp1.Web
-build_property.ProjectDir = C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web\
+build_property.ProjectDir = C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Web
+build_property.MSBuildProjectDirectory = C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/App.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Layout/EmptyLayout.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Layout/EmptyLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRW1wdHlMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Error.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/RedirectToLogin.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Pages/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWRpcmVjdFRvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Routes.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/_Imports.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Layout/MainLayout.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-5ypfzqnejq
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Layout/NavMenu.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-log5nhebbu
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Alumno.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Pages/Alumno.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbHVtbm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kwbnykdiej
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Home.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-m650tipl7r
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Pago.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Pages/Pago.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQYWdvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-p94zwba9g6
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Pages/Solicitante.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Pages/Solicitante.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTb2xpY2l0YW50ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-y7z71yyvxw
 
-[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/NET/AspireApp1/AspireApp1.Web/Components/Session/Login.razor]
+[C:/Users/sopor/OneDrive/Documentos/Prácticas/Zein/Ubam/AspireApp1.Web/Components/Session/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZXNzaW9uXExvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-v3ciquh3oi

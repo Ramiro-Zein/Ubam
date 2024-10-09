@@ -2702,11 +2702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
+      "projectUniqueName": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
       "projectName": "AspireApp1.AppHost",
-      "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
+      "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.AppHost\\AspireApp1.AppHost.csproj",
       "packagesPath": "C:\\Users\\sopor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.AppHost\\obj\\",
+      "outputPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.AppHost\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sopor\\AppData\\Roaming\\NuGet\\NuGet.Config",

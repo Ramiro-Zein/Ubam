@@ -8,5 +8,5 @@ namespace Projects;
 public class AspireApp1_AppHost
 {
     private AspireApp1_AppHost() { }
-    public static string ProjectPath => """C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.AppHost""";
+    public static string ProjectPath => """C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost""";
 }

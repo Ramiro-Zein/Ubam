@@ -7069,11 +7069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
+      "projectUniqueName": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
       "projectName": "AspireApp1.ApiService",
-      "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
+      "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
       "packagesPath": "C:\\Users\\sopor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.ApiService\\obj\\",
+      "outputPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ApiService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sopor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7091,11 +7091,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
-              "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
+            "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
+              "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
             },
-            "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\AspireApp1.Web.csproj": {
-              "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\NET\\AspireApp1\\AspireApp1.Web\\AspireApp1.Web.csproj"
+            "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\AspireApp1.Web.csproj": {
+              "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\AspireApp1.Web.csproj"
             }
           }
         }
