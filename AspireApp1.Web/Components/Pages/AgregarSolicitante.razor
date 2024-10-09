@@ -1,0 +1,58 @@
+﻿@page "/auth/alumnos/agregar-solicitante"
+
+<div class="form-container">
+    <h2>Registro de Alumno</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre del alumno</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="apellido-paterno">Apellido paterno</label>
+            <input type="text" id="apellido-paterno" name="apellido-paterno" placeholder="Ingresa tu apellido paterno" required>
+        </div>
+
+        <div class="form-group">
+            <label for="apellido-materno">Apellido materno</label>
+            <input type="text" id="apellido-materno" name="apellido-materno" placeholder="Ingresa tu apellido materno" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        </div>
+
+        <div class="form-group">
+            <label>Sexo</label>
+            <div class="gender-options">
+                <label>
+                    <input type="radio" name="sexo" value="Masculino" required> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="Femenino"> Femenino
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="carrera">Carrera</label>
+            <select id="carrera" name="carrera" required>
+                <option value="">Selecciona tu carrera</option>
+                <option value="Administración de empresas">Administración de empresas</option>
+                <option value="Administración de empresas turisticas">Administración de empresas turisticas</option>
+                <option value="Relaciones internacionales">Relaciones internacionales</option>
+                <option value="Contaduría Pública y Finanzas">Contaduría Pública y Finanzas</option>
+                <option value="Derecho">Derecho</option>
+                <option value="Mercadotecnia y Publicidad">Mercadotecnia y Publicidad</option>
+                <option value="Gastronomía">Gastronomía</option>
+            </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+</div>
+
+@code {
+
+}

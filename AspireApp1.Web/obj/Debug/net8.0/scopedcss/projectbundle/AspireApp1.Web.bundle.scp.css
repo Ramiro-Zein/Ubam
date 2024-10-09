@@ -200,6 +200,87 @@ main[b-5ypfzqnejq] {
         overflow-y: auto;
     }
 }
+/* _content/AspireApp1.Web/Components/Pages/AgregarSolicitante.razor.rz.scp.css */
+.form-container[b-a1mndsyj2w] {
+    background: #ffffff;
+    padding: 40px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-container h2[b-a1mndsyj2w] {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.form-group[b-a1mndsyj2w] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-a1mndsyj2w] {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.form-group input[b-a1mndsyj2w],
+.form-group select[b-a1mndsyj2w] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus[b-a1mndsyj2w],
+.form-group select:focus[b-a1mndsyj2w] {
+    border-color: rgb(30, 30, 30);
+    outline: none;
+}
+
+.gender-options[b-a1mndsyj2w] {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-options label[b-a1mndsyj2w] {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #555555;
+}
+
+.gender-options input[b-a1mndsyj2w] {
+    margin-right: 8px;
+}
+
+.submit-btn[b-a1mndsyj2w] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(40, 40, 40);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover[b-a1mndsyj2w] {
+    background-color: rgba(30, 30, 30);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .form-container[b-a1mndsyj2w] {
+        padding: 30px 20px;
+    }
+}
 /* _content/AspireApp1.Web/Components/Pages/Alumno.razor.rz.scp.css */
 h3[b-kwbnykdiej] {
     font-size: 1.5em;

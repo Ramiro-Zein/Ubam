@@ -148,3 +148,4 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\AspireApp1.Web.pdb
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\AspireApp1.Web.genruntimeconfig.cache
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\ref\AspireApp1.Web.dll
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\AgregarSolicitante.razor.rz.scp.css

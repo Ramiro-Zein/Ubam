@@ -2,6 +2,6 @@
 
 public class LoginResponse
 {
-    public string Message { get; set; }
+    public string? Message { get; set; }
     public Guid UserId { get; set; }
 }
