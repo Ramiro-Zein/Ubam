@@ -1,4 +1,3 @@
-using AspireApp1.Web;
 using AspireApp1.Web.Components;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -24,7 +24,7 @@ namespace AspireApp1.ApiService.Migrations
 
             modelBuilder.Entity("AspireApp1.ApiService.Models.Alumno", b =>
                 {
-                    b.Property<Guid>("Id_Alumno")
+                    b.Property<Guid>("IdAlumno")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -39,8 +39,9 @@ namespace AspireApp1.ApiService.Migrations
                     b.Property<string>("Bachillerato_Alumno")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Carrera_Alumno")
-                        .HasColumnType("int");
+                    b.Property<string>("Carrera_Alumno")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Curp_Alumno")
                         .HasColumnType("nvarchar(max)");
@@ -59,37 +60,37 @@ namespace AspireApp1.ApiService.Migrations
                     b.Property<int>("Sexo_Alumno")
                         .HasColumnType("int");
 
-                    b.HasKey("Id_Alumno");
+                    b.HasKey("IdAlumno");
 
                     b.ToTable("Alumno", (string)null);
 
                     b.HasData(
                         new
                         {
-                            Id_Alumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
+                            IdAlumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
                             Apellido_Materno_Alumno = "Vega",
                             Apellido_Paterno_Alumno = "Torres",
-                            Carrera_Alumno = 0,
+                            Carrera_Alumno = "Administración de empresas",
                             Fecha_Nacimiento_Alumno = new DateTime(2000, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Nombre_Alumno = "Miguel",
                             Sexo_Alumno = 0
                         },
                         new
                         {
-                            Id_Alumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
+                            IdAlumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
                             Apellido_Materno_Alumno = "Díaz",
                             Apellido_Paterno_Alumno = "González",
-                            Carrera_Alumno = 2,
+                            Carrera_Alumno = "Gastronomía",
                             Fecha_Nacimiento_Alumno = new DateTime(2001, 7, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Nombre_Alumno = "Sofía",
                             Sexo_Alumno = 1
                         },
                         new
                         {
-                            Id_Alumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
+                            IdAlumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
                             Apellido_Materno_Alumno = "Mendoza",
                             Apellido_Paterno_Alumno = "Reyes",
-                            Carrera_Alumno = 3,
+                            Carrera_Alumno = "Derecho",
                             Fecha_Nacimiento_Alumno = new DateTime(1999, 12, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Nombre_Alumno = "Diego",
                             Sexo_Alumno = 0
@@ -148,7 +149,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 1,
                             Concepto_Pago = "Inscripción",
                             Cuenta_Pago = "1234567890",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 7, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7440),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 9, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6588),
                             Monto_Pago = 1800m,
                             Referencia_Pago = "REF12345",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56a"),
@@ -160,7 +161,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 0,
                             Concepto_Pago = "Colegiatura",
                             Cuenta_Pago = "0987654321",
-                            Fecha_Limite_Pago = new DateTime(2024, 10, 23, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7487),
+                            Fecha_Limite_Pago = new DateTime(2024, 10, 25, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6635),
                             Monto_Pago = 2000m,
                             Referencia_Pago = "REF67890",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56b"),
@@ -172,7 +173,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 1,
                             Concepto_Pago = "Materiales",
                             Cuenta_Pago = "1122334455",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 22, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7493),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 24, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6640),
                             Monto_Pago = 1700m,
                             Referencia_Pago = "REF11223",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56c"),
@@ -184,7 +185,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 0,
                             Concepto_Pago = "Inscripción",
                             Cuenta_Pago = "1234567890",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 7, 9, 46, 50, 35, DateTimeKind.Local).AddTicks(7504),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 9, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6647),
                             Monto_Pago = 1900m,
                             Referencia_Pago = "REF12345",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56c"),

@@ -8,7 +8,7 @@ public class Alumno
     public string Apellido_Materno_Alumno { get; set; }
     public DateTime Fecha_Nacimiento_Alumno { get; set; }
     public Sexo Sexo_Alumno { get; set; }
-    public Carrera Carrera_Alumno { get; set; }
+    public String Carrera_Alumno { get; set; }
     
     public string Curp_Alumno { get; set; }
     public string Bachillerato_Alumno { get; set; }
@@ -16,14 +16,7 @@ public class Alumno
     public enum Sexo
     {
         Masculino,
-        Feminino
+        Femenino
     }
     
-    public enum Carrera
-    {
-        ISC,
-        LIDER,
-        LIAF,
-        LDM
-    }
 }

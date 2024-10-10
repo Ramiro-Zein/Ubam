@@ -35,47 +35,47 @@ public class AlumnosController : ControllerBase
     {
         await _dbContext.Alumnos.AddAsync(alumno);
         await _dbContext.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetAlumno), new { id = alumno.Id_Alumno }, alumno);
+        return CreatedAtAction(nameof(GetAlumno), new { id = alumno.IdAlumno }, alumno);
     }
 
     // Put Method
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateAlumno(Guid id, Alumno alumno)
     {
-        var alumno_actual = await _dbContext.Alumnos.FindAsync(id);
+        var alumnoActual = await _dbContext.Alumnos.FindAsync(id);
 
-        if (alumno_actual == null)
+        if (alumnoActual == null)
         {
             return NotFound();
         }
 
-        alumno_actual.Nombre_Alumno = alumno.Nombre_Alumno;
-        alumno_actual.Apellido_Paterno_Alumno = alumno.Apellido_Paterno_Alumno;
-        alumno_actual.Apellido_Materno_Alumno = alumno.Apellido_Materno_Alumno;
-        alumno_actual.Fecha_Nacimiento_Alumno = alumno.Fecha_Nacimiento_Alumno;
-        alumno_actual.Sexo_Alumno = alumno.Sexo_Alumno;
-        alumno_actual.Carrera_Alumno = alumno.Carrera_Alumno;
-        alumno_actual.Curp_Alumno = alumno.Curp_Alumno;
-        alumno_actual.Bachillerato_Alumno = alumno.Bachillerato_Alumno;
-        alumno_actual.Estado_Alumno = alumno.Estado_Alumno;
+        alumnoActual.Nombre_Alumno = alumno.Nombre_Alumno;
+        alumnoActual.Apellido_Paterno_Alumno = alumno.Apellido_Paterno_Alumno;
+        alumnoActual.Apellido_Materno_Alumno = alumno.Apellido_Materno_Alumno;
+        alumnoActual.Fecha_Nacimiento_Alumno = alumno.Fecha_Nacimiento_Alumno;
+        alumnoActual.Sexo_Alumno = alumno.Sexo_Alumno;
+        alumnoActual.Carrera_Alumno = alumno.Carrera_Alumno;
+        alumnoActual.Curp_Alumno = alumno.Curp_Alumno;
+        alumnoActual.Bachillerato_Alumno = alumno.Bachillerato_Alumno;
+        alumnoActual.Estado_Alumno = alumno.Estado_Alumno;
 
         await _dbContext.SaveChangesAsync();
-        return Ok(alumno_actual);
+        return Ok(alumnoActual);
     }
 
     // Delete Method
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAlumno(Guid id)
     {
-        var alumno_actual = await _dbContext.Alumnos.FindAsync(id);
+        var alumnoActual = await _dbContext.Alumnos.FindAsync(id);
 
-        if (alumno_actual == null)
+        if (alumnoActual == null)
         {
             return NotFound();
         }
 
-        _dbContext.Alumnos.Remove(alumno_actual);
+        _dbContext.Alumnos.Remove(alumnoActual);
         await _dbContext.SaveChangesAsync();
-        return Ok(alumno_actual);
+        return Ok(alumnoActual);
     }
 }

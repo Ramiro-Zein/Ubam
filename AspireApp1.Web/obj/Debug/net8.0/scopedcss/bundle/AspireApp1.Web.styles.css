@@ -200,8 +200,8 @@ main[b-5ypfzqnejq] {
         overflow-y: auto;
     }
 }
-/* _content/AspireApp1.Web/Components/Pages/AgregarSolicitante.razor.rz.scp.css */
-.form-container[b-a1mndsyj2w] {
+/* _content/AspireApp1.Web/Components/Pages/AgregarAlumno.razor.rz.scp.css */
+.form-container[b-p75spn3ctt] {
     background: #ffffff;
     padding: 40px;
     margin-bottom: 1rem;
@@ -210,25 +210,25 @@ main[b-5ypfzqnejq] {
     width: 100%;
 }
 
-.form-container h2[b-a1mndsyj2w] {
+.form-container h2[b-p75spn3ctt] {
     text-align: center;
     margin-bottom: 30px;
     color: #333333;
 }
 
-.form-group[b-a1mndsyj2w] {
+.form-group[b-p75spn3ctt] {
     margin-bottom: 20px;
 }
 
-.form-group label[b-a1mndsyj2w] {
+.form-group label[b-p75spn3ctt] {
     display: block;
     margin-bottom: 8px;
     color: #555555;
     font-weight: 500;
 }
 
-.form-group input[b-a1mndsyj2w],
-.form-group select[b-a1mndsyj2w] {
+.form-group input[b-p75spn3ctt],
+.form-group select[b-p75spn3ctt] {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #cccccc;
@@ -237,29 +237,29 @@ main[b-5ypfzqnejq] {
     transition: border-color 0.3s;
 }
 
-.form-group input:focus[b-a1mndsyj2w],
-.form-group select:focus[b-a1mndsyj2w] {
+.form-group input:focus[b-p75spn3ctt],
+.form-group select:focus[b-p75spn3ctt] {
     border-color: rgb(30, 30, 30);
     outline: none;
 }
 
-.gender-options[b-a1mndsyj2w] {
+.gender-options[b-p75spn3ctt] {
     display: flex;
     gap: 20px;
 }
 
-.gender-options label[b-a1mndsyj2w] {
+.gender-options label[b-p75spn3ctt] {
     display: flex;
     align-items: center;
     font-weight: 400;
     color: #555555;
 }
 
-.gender-options input[b-a1mndsyj2w] {
+.gender-options input[b-p75spn3ctt] {
     margin-right: 8px;
 }
 
-.submit-btn[b-a1mndsyj2w] {
+.submit-btn[b-p75spn3ctt] {
     width: 100%;
     padding: 12px;
     background-color: rgb(40, 40, 40);
@@ -271,13 +271,13 @@ main[b-5ypfzqnejq] {
     transition: background-color 0.3s;
 }
 
-.submit-btn:hover[b-a1mndsyj2w] {
+.submit-btn:hover[b-p75spn3ctt] {
     background-color: rgba(30, 30, 30);
 }
 
 /* Responsivo */
 @media (max-width: 600px) {
-    .form-container[b-a1mndsyj2w] {
+    .form-container[b-p75spn3ctt] {
         padding: 30px 20px;
     }
 }

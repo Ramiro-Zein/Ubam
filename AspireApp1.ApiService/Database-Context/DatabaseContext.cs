@@ -164,41 +164,41 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         List<Alumno> alumnosInit = new List<Alumno>();
         alumnosInit.Add(new Alumno
         {
-            Id_Alumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
+            IdAlumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
             Nombre_Alumno = "Miguel",
             Apellido_Paterno_Alumno = "Torres",
             Apellido_Materno_Alumno = "Vega",
             Fecha_Nacimiento_Alumno = new DateTime(2000, 3, 14),
             Sexo_Alumno = Alumno.Sexo.Masculino,
-            Carrera_Alumno = Alumno.Carrera.ISC
+            Carrera_Alumno = "Administración de empresas"
         });
         
         alumnosInit.Add(new Alumno
         {
-            Id_Alumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
+            IdAlumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
             Nombre_Alumno = "Sofía",
             Apellido_Paterno_Alumno = "González",
             Apellido_Materno_Alumno = "Díaz",
             Fecha_Nacimiento_Alumno = new DateTime(2001, 7, 19),
-            Sexo_Alumno = Alumno.Sexo.Feminino,
-            Carrera_Alumno = Alumno.Carrera.LIAF
+            Sexo_Alumno = Alumno.Sexo.Femenino,
+            Carrera_Alumno = "Gastronomía"
         });
         
         alumnosInit.Add(new Alumno
         {
-            Id_Alumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
+            IdAlumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
             Nombre_Alumno = "Diego",
             Apellido_Paterno_Alumno = "Reyes",
             Apellido_Materno_Alumno = "Mendoza",
             Fecha_Nacimiento_Alumno = new DateTime(1999, 12, 2),
             Sexo_Alumno = Alumno.Sexo.Masculino,
-            Carrera_Alumno = Alumno.Carrera.LDM
+            Carrera_Alumno = "Derecho"
         });
         
         modelBuilder.Entity<Alumno>(alumno =>
         {
             alumno.ToTable("Alumno");
-            alumno.HasKey(p => p.Id_Alumno);
+            alumno.HasKey(p => p.IdAlumno);
             alumno.Property(p => p.Nombre_Alumno).IsRequired().HasMaxLength(200);
             alumno.Property(p => p.Apellido_Paterno_Alumno);
             alumno.Property(p => p.Apellido_Materno_Alumno);
