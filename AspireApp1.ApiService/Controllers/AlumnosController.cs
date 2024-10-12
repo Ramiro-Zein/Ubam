@@ -35,7 +35,7 @@ public class AlumnosController : ControllerBase
     {
         await _dbContext.Alumnos.AddAsync(alumno);
         await _dbContext.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetAlumno), new { id = alumno.IdAlumno }, alumno);
+        return CreatedAtAction(nameof(GetAlumno), new { id = alumno.Id_Alumno }, alumno);
     }
 
     // Put Method

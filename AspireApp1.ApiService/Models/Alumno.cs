@@ -2,7 +2,7 @@
 
 public class Alumno
 {
-    public Guid IdAlumno { get; set; }
+    public Guid Id_Alumno { get; set; }
     public string Nombre_Alumno { get; set; }
     public string Apellido_Paterno_Alumno { get; set; }
     public string Apellido_Materno_Alumno { get; set; }

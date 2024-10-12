@@ -164,7 +164,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         List<Alumno> alumnosInit = new List<Alumno>();
         alumnosInit.Add(new Alumno
         {
-            IdAlumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
+            Id_Alumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
             Nombre_Alumno = "Miguel",
             Apellido_Paterno_Alumno = "Torres",
             Apellido_Materno_Alumno = "Vega",
@@ -175,7 +175,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         
         alumnosInit.Add(new Alumno
         {
-            IdAlumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
+            Id_Alumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
             Nombre_Alumno = "Sofía",
             Apellido_Paterno_Alumno = "González",
             Apellido_Materno_Alumno = "Díaz",
@@ -186,7 +186,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         
         alumnosInit.Add(new Alumno
         {
-            IdAlumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
+            Id_Alumno = Guid.Parse("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
             Nombre_Alumno = "Diego",
             Apellido_Paterno_Alumno = "Reyes",
             Apellido_Materno_Alumno = "Mendoza",
@@ -198,7 +198,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         modelBuilder.Entity<Alumno>(alumno =>
         {
             alumno.ToTable("Alumno");
-            alumno.HasKey(p => p.IdAlumno);
+            alumno.HasKey(p => p.Id_Alumno);
             alumno.Property(p => p.Nombre_Alumno).IsRequired().HasMaxLength(200);
             alumno.Property(p => p.Apellido_Paterno_Alumno);
             alumno.Property(p => p.Apellido_Materno_Alumno);

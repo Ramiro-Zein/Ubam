@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3igg2JyI79w6EvcpJwg9wKMAGW3zlCDPQnUvluGSaOk=",
+  "Hash": "UOM/4LZOQuhPVe/yztKp/O7I4ZTcAFdxF9pZSXdG8rU=",
   "Source": "AspireApp1.ApiService",
   "BasePath": "_content/AspireApp1.ApiService",
   "Mode": "Default",
@@ -46,25 +46,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ApiService\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AspireApp1.ApiService.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\Components\\Pages\\AgregarSolicitante.razor.js",
-      "SourceId": "AspireApp1.Web",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\",
-      "BasePath": "_content/AspireApp1.Web",
-      "RelativePath": "Components/Pages/AgregarSolicitante.razor.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Components\\Pages\\AgregarSolicitante.razor.js"
     },
     {
       "Identity": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AspireApp1.Web.bundle.scp.css",
