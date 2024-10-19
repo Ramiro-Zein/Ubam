@@ -227,16 +227,6 @@ main[b-5ypfzqnejq] {
     font-weight: 500;
 }
 
-.form-group input[b-p75spn3ctt],
-.form-group select[b-p75spn3ctt] {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
 .form-group input:focus[b-p75spn3ctt],
 .form-group select:focus[b-p75spn3ctt] {
     border-color: rgb(30, 30, 30);

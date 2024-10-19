@@ -58,7 +58,23 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+/*
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy  =>
+        {
+            policy.WithOrigins("hhttp://localhost:5122/auth/alumnos/agregar-alumno").AllowAnyMethod();;
+        });
+});
+*/
+
 var app = builder.Build();
+
+//app.UseCors("AllowAll");
+//app.UseAuthorization();
 
 // App
 app.UseExceptionHandler();

@@ -24,7 +24,7 @@ namespace AspireApp1.ApiService.Migrations
 
             modelBuilder.Entity("AspireApp1.ApiService.Models.Alumno", b =>
                 {
-                    b.Property<Guid>("IdAlumno")
+                    b.Property<Guid>("Id_Alumno")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -57,43 +57,44 @@ namespace AspireApp1.ApiService.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int>("Sexo_Alumno")
-                        .HasColumnType("int");
+                    b.Property<string>("Sexo_Alumno")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdAlumno");
+                    b.HasKey("Id_Alumno");
 
                     b.ToTable("Alumno", (string)null);
 
                     b.HasData(
                         new
                         {
-                            IdAlumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
+                            Id_Alumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56a"),
                             Apellido_Materno_Alumno = "Vega",
                             Apellido_Paterno_Alumno = "Torres",
                             Carrera_Alumno = "Administración de empresas",
                             Fecha_Nacimiento_Alumno = new DateTime(2000, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Nombre_Alumno = "Miguel",
-                            Sexo_Alumno = 0
+                            Sexo_Alumno = "Masculino"
                         },
                         new
                         {
-                            IdAlumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
+                            Id_Alumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56b"),
                             Apellido_Materno_Alumno = "Díaz",
                             Apellido_Paterno_Alumno = "González",
                             Carrera_Alumno = "Gastronomía",
                             Fecha_Nacimiento_Alumno = new DateTime(2001, 7, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Nombre_Alumno = "Sofía",
-                            Sexo_Alumno = 1
+                            Sexo_Alumno = "Femenino"
                         },
                         new
                         {
-                            IdAlumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
+                            Id_Alumno = new Guid("802c2777-24a5-43ba-b05e-5ffe9a33b56c"),
                             Apellido_Materno_Alumno = "Mendoza",
                             Apellido_Paterno_Alumno = "Reyes",
                             Carrera_Alumno = "Derecho",
                             Fecha_Nacimiento_Alumno = new DateTime(1999, 12, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Nombre_Alumno = "Diego",
-                            Sexo_Alumno = 0
+                            Sexo_Alumno = "Masculino"
                         });
                 });
 
@@ -149,7 +150,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 1,
                             Concepto_Pago = "Inscripción",
                             Cuenta_Pago = "1234567890",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 9, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6588),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 17, 9, 59, 24, 993, DateTimeKind.Local).AddTicks(866),
                             Monto_Pago = 1800m,
                             Referencia_Pago = "REF12345",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56a"),
@@ -161,7 +162,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 0,
                             Concepto_Pago = "Colegiatura",
                             Cuenta_Pago = "0987654321",
-                            Fecha_Limite_Pago = new DateTime(2024, 10, 25, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6635),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 2, 9, 59, 24, 993, DateTimeKind.Local).AddTicks(908),
                             Monto_Pago = 2000m,
                             Referencia_Pago = "REF67890",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56b"),
@@ -173,7 +174,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 1,
                             Concepto_Pago = "Materiales",
                             Cuenta_Pago = "1122334455",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 24, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6640),
+                            Fecha_Limite_Pago = new DateTime(2024, 12, 2, 9, 59, 24, 993, DateTimeKind.Local).AddTicks(916),
                             Monto_Pago = 1700m,
                             Referencia_Pago = "REF11223",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56c"),
@@ -185,7 +186,7 @@ namespace AspireApp1.ApiService.Migrations
                             Banco_Pago = 0,
                             Concepto_Pago = "Inscripción",
                             Cuenta_Pago = "1234567890",
-                            Fecha_Limite_Pago = new DateTime(2024, 11, 9, 9, 35, 23, 853, DateTimeKind.Local).AddTicks(6647),
+                            Fecha_Limite_Pago = new DateTime(2024, 11, 17, 9, 59, 24, 993, DateTimeKind.Local).AddTicks(920),
                             Monto_Pago = 1900m,
                             Referencia_Pago = "REF12345",
                             SolicitanteId = new Guid("402c2777-24a5-43ba-b05e-5ffe9a33b56c"),

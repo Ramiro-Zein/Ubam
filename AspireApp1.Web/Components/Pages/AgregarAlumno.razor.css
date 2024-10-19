@@ -24,16 +24,6 @@
     font-weight: 500;
 }
 
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
 .form-group input:focus,
 .form-group select:focus {
     border-color: rgb(30, 30, 30);

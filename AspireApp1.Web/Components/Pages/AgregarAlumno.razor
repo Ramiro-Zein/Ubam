@@ -1,58 +1,11 @@
 ﻿@page "/auth/alumnos/agregar-alumno"
 
-<div class="form-container">
-    <h2>Registro de Alumno</h2>
-    <form action="http://localhost:5561/api/alumnos" method="post">
-        <div class="form-group">
-            <label for="nombre">Nombre del alumno</label>
-            <input type="text" id="nombre" name="Nombre_Alumno" placeholder="Ingresa tu nombre" required>
-        </div>
+<h3>Agregar Alumno</h3>
 
-        <div class="form-group">
-            <label for="apellido-paterno">Apellido paterno</label>
-            <input type="text" id="apellido-paterno" name="Apellido_Paterno_Alumno" placeholder="Ingresa tu apellido paterno" required>
-        </div>
+<input type="text" @bind="nombre" placeholder="Ingresa tu nombre" />
 
-        <div class="form-group">
-            <label for="apellido-materno">Apellido materno</label>
-            <input type="text" id="apellido-materno" name="Apellido_Materno_Alumno" placeholder="Ingresa tu apellido materno" required>
-        </div>
-
-        <div class="form-group">
-            <label for="fecha-nacimiento">Fecha de nacimiento</label>
-            <input type="date" id="fecha-nacimiento" name="Fecha_Nacimiento_Alumno" required>
-        </div>
-
-        <div class="form-group">
-            <label>Sexo</label>
-            <div class="gender-options">
-                <label>
-                    <input type="radio" name="Sexo_Alumno" value="Masculino" required> Masculino
-                </label>
-                <label>
-                    <input type="radio" name="Sexo_Alumno" value="Femenino"> Femenino
-                </label>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="carrera">Carrera</label>
-            <select id="carrera" name="Carrera_Alumno" required>
-                <option value="">Selecciona la carrera</option>
-                <option value="Administración de empresas">Administración de empresas</option>
-                <option value="Administración de empresas turisticas">Administración de empresas turísticas</option>
-                <option value="Relaciones internacionales">Relaciones internacionales</option>
-                <option value="Contaduría Pública y Finanzas">Contaduría Pública y Finanzas</option>
-                <option value="Derecho">Derecho</option>
-                <option value="Mercadotecnia y Publicidad">Mercadotecnia y Publicidad</option>
-                <option value="Gastronomía">Gastronomía</option>
-            </select>
-        </div>
-
-        <button type="submit" class="submit-btn">Enviar</button>
-    </form>
-</div>
+<label>Nombre ingresado: @nombre</label>
 
 @code {
-
+    private string nombre = string.Empty;
 }

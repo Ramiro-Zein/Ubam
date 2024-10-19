@@ -189,12 +189,12 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.Api
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ApiService\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.Web.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\NET\AspireApp1\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.Web.pdb
-C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\appsettings.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.Web.deps.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.Web.runtimeconfig.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.Web.staticwebassets.runtime.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.Web.exe
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\appsettings.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.ApiService.staticwebassets.runtime.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.ApiService.exe
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ApiService\bin\Debug\net8.0\AspireApp1.ApiService.deps.json

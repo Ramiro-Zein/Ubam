@@ -41,7 +41,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             
         modelBuilder.Entity<Solicitante>(solicitante =>
         {
-            solicitante.ToTable("Solicitante"); // Table name
+            solicitante.ToTable("Solicitante");
             solicitante.HasKey(p => p.Id_Solicitante);
             solicitante.HasMany(s => s.Pagos)
                 .WithOne(p => p.Solicitante)
@@ -169,7 +169,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             Apellido_Paterno_Alumno = "Torres",
             Apellido_Materno_Alumno = "Vega",
             Fecha_Nacimiento_Alumno = new DateTime(2000, 3, 14),
-            Sexo_Alumno = Alumno.Sexo.Masculino,
+            Sexo_Alumno = "Masculino",
             Carrera_Alumno = "Administración de empresas"
         });
         
@@ -180,7 +180,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             Apellido_Paterno_Alumno = "González",
             Apellido_Materno_Alumno = "Díaz",
             Fecha_Nacimiento_Alumno = new DateTime(2001, 7, 19),
-            Sexo_Alumno = Alumno.Sexo.Femenino,
+            Sexo_Alumno = "Femenino",
             Carrera_Alumno = "Gastronomía"
         });
         
@@ -191,7 +191,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             Apellido_Paterno_Alumno = "Reyes",
             Apellido_Materno_Alumno = "Mendoza",
             Fecha_Nacimiento_Alumno = new DateTime(1999, 12, 2),
-            Sexo_Alumno = Alumno.Sexo.Masculino,
+            Sexo_Alumno = "Masculino",
             Carrera_Alumno = "Derecho"
         });
         

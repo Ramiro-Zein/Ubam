@@ -135,6 +135,7 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\AgregarAlumno.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Alumno.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Pago.razor.rz.scp.css
@@ -148,4 +149,3 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\AspireApp1.Web.pdb
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\AspireApp1.Web.genruntimeconfig.cache
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\ref\AspireApp1.Web.dll
-C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.Web\obj\Debug\net8.0\scopedcss\Components\Pages\AgregarAlumno.razor.rz.scp.css
