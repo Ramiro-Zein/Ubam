@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace AspireApp1.Web.Models;
+namespace AspireApp1.WebUbam.Models;
 public class Pago
 {
     public Guid Id_Pago { get; set; }
@@ -11,8 +11,7 @@ public class Pago
     public Banco Banco_Pago { get; set; }
     public string Concepto_Pago { get; set; }
     public DateTime Fecha_Limite_Pago { get; set; }
-
-    // Relación con Solicitante
+    
     public Guid SolicitanteId { get; set; }
 
     [JsonIgnore]

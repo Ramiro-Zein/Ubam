@@ -1,0 +1,70 @@
+.form-container[b-p75spn3ctt] {
+    background: #ffffff;
+    padding: 40px;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-container h2[b-p75spn3ctt] {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.form-group[b-p75spn3ctt] {
+    margin-bottom: 20px;
+}
+
+.form-group label[b-p75spn3ctt] {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.form-group input:focus[b-p75spn3ctt],
+.form-group select:focus[b-p75spn3ctt] {
+    border-color: rgb(30, 30, 30);
+    outline: none;
+}
+
+.gender-options[b-p75spn3ctt] {
+    display: flex;
+    gap: 20px;
+}
+
+.gender-options label[b-p75spn3ctt] {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #555555;
+}
+
+.gender-options input[b-p75spn3ctt] {
+    margin-right: 8px;
+}
+
+.submit-btn[b-p75spn3ctt] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(40, 40, 40);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover[b-p75spn3ctt] {
+    background-color: rgba(30, 30, 30);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .form-container[b-p75spn3ctt] {
+        padding: 30px 20px;
+    }
+}
