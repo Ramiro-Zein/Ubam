@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MzLiCjOM39D+KE7nCIWkw/2eAjE4H2JWj4osSWwS7VM=",
+  "Hash": "UOM/4LZOQuhPVe/yztKp/O7I4ZTcAFdxF9pZSXdG8rU=",
   "Source": "AspireApp1.ApiService",
   "BasePath": "_content/AspireApp1.ApiService",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "AspireApp1.Web",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

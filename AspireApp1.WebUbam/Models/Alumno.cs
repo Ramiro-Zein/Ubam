@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations;
+namespace AspireApp1.WebUbam.Models;
+
+public class Alumno
+{
+    [Key]
+    public Guid Id_Alumno { get; set; }
+    public string? Nombre_Alumno { get; set; }
+    public string? Apellido_Paterno_Alumno { get; set; }
+    public string? Apellido_Materno_Alumno { get; set; }
+    public DateTime Fecha_Nacimiento_Alumno { get; set; } = DateTime.Today;
+    public string? Sexo_Alumno { get; set; }
+    public string? Carrera_Alumno { get; set; }
+    public string? Curp_Alumno { get; set; }
+    public string? Bachillerato_Alumno { get; set; }
+    public string? Estado_Alumno { get; set; }
+}

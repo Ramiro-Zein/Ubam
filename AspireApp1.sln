@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireApp1.ApiService", "As
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireApp1.Web", "AspireApp1.Web\AspireApp1.Web.csproj", "{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireApp1.WebUbam", "AspireApp1.WebUbam\AspireApp1.WebUbam.csproj", "{02C66033-46E6-4C6E-BFBD-ED32DD721575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2576B70-7F57-44D5-B82C-9EA30C4A7C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02C66033-46E6-4C6E-BFBD-ED32DD721575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02C66033-46E6-4C6E-BFBD-ED32DD721575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02C66033-46E6-4C6E-BFBD-ED32DD721575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02C66033-46E6-4C6E-BFBD-ED32DD721575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

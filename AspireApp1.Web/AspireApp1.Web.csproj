@@ -17,9 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Components\Pages\AgregarAlumno.razor">
-      <DependentUpon>Alumno.razor</DependentUpon>
-    </Content>
+    <Folder Include="Controller\" />
   </ItemGroup>
 
 </Project>

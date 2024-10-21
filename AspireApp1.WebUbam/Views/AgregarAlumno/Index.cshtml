@@ -1,0 +1,90 @@
+﻿@model AspireApp1.WebUbam.Models.Alumno
+
+@{
+    ViewData["Title"] = "Agregar Alumnos";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="card-title mb-0"><i class="bi bi-person-plus me-2"></i>Agregar Alumno</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Agregar" method="post" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombreAlumno" class="form-label">Nombre del Alumno</label>
+                            <input type="text" class="form-control" id="nombreAlumno" name="Nombre_Alumno" value="@Model?.Nombre_Alumno" required placeholder="Ingresa el nombre del alumno">
+                            <div class="invalid-feedback">
+                                Por favor, ingresa el nombre del alumno.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="apellidoPaternoAlumno" class="form-label">Apellido Paterno</label>
+                            <input type="text" class="form-control" id="apellidoPaternoAlumno" name="Apellido_Paterno_Alumno" value="@Model?.Apellido_Paterno_Alumno" required placeholder="Ingresa el apellido paterno">
+                            <div class="invalid-feedback">
+                                Por favor, ingresa el apellido paterno.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="apellidoMaternoAlumno" class="form-label">Apellido Materno</label>
+                            <input type="text" class="form-control" id="apellidoMaternoAlumno" name="Apellido_Materno_Alumno" value="@Model?.Apellido_Materno_Alumno" placeholder="Ingresa el apellido materno">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fechaNacimientoAlumno" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="fechaNacimientoAlumno" name="Fecha_Nacimiento_Alumno" value="@Model?.Fecha_Nacimiento_Alumno.ToString("yyyy-MM-dd")" required>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona una fecha de nacimiento.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sexoAlumno" class="form-label">Sexo</label>
+                            <select class="form-select" id="sexoAlumno" name="Sexo_Alumno" required>
+                                <option value="">Seleccione</option>
+                                <option value="Masculino" selected="@(Model?.Sexo_Alumno == "Masculino")">Masculino</option>
+                                <option value="Femenino" selected="@(Model?.Sexo_Alumno == "Femenino")">Femenino</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona el sexo.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="carreraAlumno" class="form-label">Carrera</label>
+                            <input type="text" class="form-control" id="carreraAlumno" name="Carrera_Alumno" value="@Model?.Carrera_Alumno" placeholder="Ingresa la carrera del alumno">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark">
+                                <i class="bi bi-save me-2"></i>Guardar Alumno
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+}
