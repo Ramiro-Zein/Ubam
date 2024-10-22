@@ -95,7 +95,6 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\D
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\AspireApp1.AppHost.AssemblyInfo.cs
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\AspireApp1.AppHost.csproj.CoreCompileInputs.cache
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\Aspire\references\AspireApp1_ApiService.ProjectMetadata.g.cs
-C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\Aspire\references\AspireApp1_Web.ProjectMetadata.g.cs
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\AspireApp1.AppHost.sourcelink.json
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.AppHost\obj\Debug\net8.0\AspireAp.112E23C5.Up2Date

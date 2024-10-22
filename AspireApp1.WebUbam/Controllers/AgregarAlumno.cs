@@ -11,7 +11,7 @@ public class AgregarAlumnoController : Controller
     {
         _httpClient = httpClientFactory.CreateClient();
     }
-
+    
     [HttpGet]
     public IActionResult Index()
     {

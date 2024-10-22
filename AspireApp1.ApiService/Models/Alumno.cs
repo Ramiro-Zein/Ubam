@@ -1,7 +1,10 @@
-﻿namespace AspireApp1.ApiService.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AspireApp1.ApiService.Models;
 
 public class Alumno
 {
+    [Key]
     public Guid Id_Alumno { get; set; }
     public string Nombre_Alumno { get; set; }
     public string Apellido_Paterno_Alumno { get; set; }

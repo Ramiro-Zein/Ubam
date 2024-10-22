@@ -9,7 +9,7 @@
       "AspireApp1.ApiService/1.0.0": {
         "dependencies": {
           "AspireApp1.ServiceDefaults": "1.0.0",
-          "AspireApp1.Web": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
           "Microsoft.AspNetCore.JsonPatch": "8.0.8",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.Design": "8.0.8",
@@ -164,19 +164,6 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Authorization/8.0.8": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "8.0.8",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
-          "Microsoft.Extensions.Options": "8.0.2"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.824.36908"
-          }
-        }
-      },
       "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {},
       "Microsoft.AspNetCore.DataProtection/2.2.0": {
         "dependencies": {
@@ -241,14 +228,6 @@
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.JsonPatch.dll": {
             "assemblyVersion": "8.0.8.0",
-            "fileVersion": "8.0.824.36908"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Metadata/8.0.8": {
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
-            "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.824.36908"
           }
         }
@@ -1598,20 +1577,6 @@
             "fileVersion": "1.0.0.0"
           }
         }
-      },
-      "AspireApp1.Web/1.0.0": {
-        "dependencies": {
-          "AspireApp1.ServiceDefaults": "1.0.0",
-          "Microsoft.AspNetCore.Authentication": "2.2.0",
-          "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
-          "Microsoft.AspNetCore.Authorization": "8.0.8"
-        },
-        "runtime": {
-          "AspireApp1.Web.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1719,13 +1684,6 @@
       "path": "microsoft.aspnetcore.authentication.core/2.2.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authorization/8.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-e+ehkJTx0bqUb9zzM9ohV830LhoK3fy5lfVGPWAozbq6I2rJpyq7L0OUgEGNEQLMTzawkDjpNlJ4WU1ck/TDjw==",
-      "path": "microsoft.aspnetcore.authorization/8.0.8",
-      "hashPath": "microsoft.aspnetcore.authorization.8.0.8.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1795,13 +1753,6 @@
       "sha512": "sha512-IGhuO/SsjHIIvFP4O/5pn/WcPJor+A+BERBhIkMYrlYcRXnZmbBBNSyqoNI9wFq0oxtsrnYMnzXAIi+0MKVdSA==",
       "path": "microsoft.aspnetcore.jsonpatch/8.0.8",
       "hashPath": "microsoft.aspnetcore.jsonpatch.8.0.8.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Metadata/8.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4WSCv7ddawjabLZ7hj0Ai7hTzFYLw5PsvHVKrJkuBgrv+blELbIDMVj7b5q7PZs7Xvz0W0ViKY/rcVkqD0D5yQ==",
-      "path": "microsoft.aspnetcore.metadata/8.0.8",
-      "hashPath": "microsoft.aspnetcore.metadata.8.0.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.WebUtilities/2.2.0": {
       "type": "package",
@@ -2658,11 +2609,6 @@
       "hashPath": "zstdsharp.port.0.7.3.nupkg.sha512"
     },
     "AspireApp1.ServiceDefaults/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "AspireApp1.Web/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

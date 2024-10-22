@@ -7,14 +7,10 @@ namespace AspireApp1.WebUbam.Controllers;
 public class SolicitanteController : Controller
 {
     private readonly HttpClient _httpClient;
-    private readonly IConfiguration _configuration;
-    private readonly string _apiUrl;
 
-    public SolicitanteController(HttpClient httpClient, IConfiguration configuration)
+    public SolicitanteController(HttpClient httpClient)
     {
         _httpClient = httpClient;
-        _configuration = configuration;
-        _apiUrl = "http://localhost:5561/api/pagos";
     }
 
     public async Task<IActionResult> Index()
@@ -22,9 +18,9 @@ public class SolicitanteController : Controller
         try
         {
             var solicitantes = await GetSolicitantesAsync();
-            if (solicitantes == null)
+            if (solicitantes == null || !solicitantes.Any())
             {
-                ViewBag.Error = "No se pudieron obtener los datos de los solicitantes.";
+                ViewBag.Error = "No se encontraron solicitantes.";
                 return View(Enumerable.Empty<Solicitante>());
             }
 
@@ -39,7 +35,7 @@ public class SolicitanteController : Controller
 
     private async Task<List<Solicitante>?> GetSolicitantesAsync()
     {
-        var response = await _httpClient.GetAsync(_apiUrl);
+        var response = await _httpClient.GetAsync("http://localhost:5561/api/solicitante");
 
         if (response.IsSuccessStatusCode)
         {
@@ -50,9 +46,6 @@ public class SolicitanteController : Controller
             });
         }
 
-        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
-            throw new Exception("No se encontraron solicitantes.");
-
-        throw new Exception("Error al obtener solicitantes de la API. Código de estado: " + response.StatusCode);
+        throw new Exception("Error al obtener solicitantes de la API.");
     }
 }

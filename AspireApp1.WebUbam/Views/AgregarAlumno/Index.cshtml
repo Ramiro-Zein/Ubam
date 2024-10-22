@@ -31,7 +31,10 @@
 
                         <div class="mb-3">
                             <label for="apellidoMaternoAlumno" class="form-label">Apellido Materno</label>
-                            <input type="text" class="form-control" id="apellidoMaternoAlumno" name="Apellido_Materno_Alumno" value="@Model?.Apellido_Materno_Alumno" placeholder="Ingresa el apellido materno">
+                            <input type="text" class="form-control" id="apellidoMaternoAlumno" name="Apellido_Materno_Alumno" value="@Model?.Apellido_Materno_Alumno" placeholder="Ingresa el apellido materno" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese el apellido materno.
+                            </div>
                         </div>
 
                         <div class="mb-3">
@@ -56,7 +59,15 @@
 
                         <div class="mb-3">
                             <label for="carreraAlumno" class="form-label">Carrera</label>
-                            <input type="text" class="form-control" id="carreraAlumno" name="Carrera_Alumno" value="@Model?.Carrera_Alumno" placeholder="Ingresa la carrera del alumno">
+                            <select class="form-select" id="carreraAlumno" name="Carrera_Alumno" value="@Model?.Carrera_Alumno" required>
+                                <option value="">Seleccione</option>
+                                <option value="Ingeniería en sistemas">Ingeniería en sistemas</option>
+                                <option value="Derecho">Derecho</option>
+                                <option value="Gastronomía">Gastronomía</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor, selecciona la carrera.
+                            </div>
                         </div>
 
                         <div class="d-grid">

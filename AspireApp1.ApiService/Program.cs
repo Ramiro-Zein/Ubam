@@ -1,5 +1,6 @@
 using AspireApp1.ApiService.Database_Context;
 using AspireApp1.ApiService.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -58,18 +59,19 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
+
 var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
-/*
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-        policy  =>
-        {
-            policy.WithOrigins("hhttp://localhost:5122/auth/alumnos/agregar-alumno").AllowAnyMethod();;
-        });
-});
-*/
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/api/login";
+        options.AccessDeniedPath = "/api/login/denied";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+        options.Cookie.SameSite = SameSiteMode.Strict;
+        options.Cookie.Name = "AspireAppAuth";
+    });
 
 var app = builder.Build();
 

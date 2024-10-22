@@ -126,7 +126,8 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             Apellido_Paterno_Usuario = "García",
             Apellido_Materno_Usuario = "Hernández",
             FechaNacimiento_Usuario = new DateTime(1990, 5, 12),
-            Contrasena_Usuario = "1234"
+            Contrasena_Usuario = "1234",
+            Rol_Usuario = Usuario.Rol.Admin
         });
         
         usuariosInit.Add(new Usuario
@@ -136,7 +137,8 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             Apellido_Paterno_Usuario = "Martínez",
             Apellido_Materno_Usuario = "López",
             FechaNacimiento_Usuario = new DateTime(1992, 8, 23),
-            Contrasena_Usuario = "securepassword"
+            Contrasena_Usuario = "securepassword",
+            Rol_Usuario = Usuario.Rol.Docente
         });
         
         usuariosInit.Add(new Usuario
@@ -146,7 +148,8 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             Apellido_Paterno_Usuario = "Sánchez",
             Apellido_Materno_Usuario = "Ramírez",
             FechaNacimiento_Usuario = new DateTime(1988, 11, 5),
-            Contrasena_Usuario = "pass456"
+            Contrasena_Usuario = "pass456",
+            Rol_Usuario = Usuario.Rol.alumno
         });
         
         modelBuilder.Entity<Usuario>(usuario =>
@@ -158,6 +161,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             usuario.Property(p => p.Apellido_Materno_Usuario);
             usuario.Property(p => p.FechaNacimiento_Usuario).IsRequired();
             usuario.Property(p => p.Contrasena_Usuario).IsRequired().HasMaxLength(200);
+            usuario.Property(p => p.Rol_Usuario).IsRequired();
             usuario.HasData(usuariosInit);
         });
         
