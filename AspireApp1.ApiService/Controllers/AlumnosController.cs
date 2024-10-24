@@ -29,13 +29,38 @@ public class AlumnosController : ControllerBase
         return Ok(alumno);
     }
 
-    // Post Method
     [HttpPost]
     public async Task<IActionResult> CreateAlumno(Alumno alumno)
     {
         await _dbContext.Alumnos.AddAsync(alumno);
         await _dbContext.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetAlumno), new { id = alumno.Id_Alumno }, alumno);
+
+        string contrasenaTemporal = NewPassword();
+
+        var usuario = new Usuario
+        {
+            Id_Usuario = Guid.NewGuid(),
+            Nombre_Usuario = alumno.Nombre_Alumno,
+            Apellido_Paterno_Usuario = alumno.Apellido_Paterno_Alumno,
+            Apellido_Materno_Usuario = alumno.Apellido_Materno_Alumno,
+            FechaNacimiento_Usuario = alumno.Fecha_Nacimiento_Alumno,
+            Contrasena_Usuario = contrasenaTemporal,
+            Rol_Usuario = Usuario.Rol.alumno
+        };
+
+        await _dbContext.Usuarios.AddAsync(usuario);
+        await _dbContext.SaveChangesAsync();
+        
+        return Ok(new
+        {
+            Usuario = usuario.Nombre_Usuario,
+            Contrasena = contrasenaTemporal
+        });
+    }
+
+    private string? NewPassword()
+    {
+        return Guid.NewGuid().ToString().Substring(0, 8);
     }
 
     // Put Method

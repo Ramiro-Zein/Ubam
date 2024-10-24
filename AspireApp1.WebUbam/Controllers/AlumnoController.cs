@@ -7,10 +7,12 @@ namespace AspireApp1.WebUbam.Controllers;
 public class AlumnoController : Controller
 {
     private readonly HttpClient _httpClient;
+    private readonly string _apiBaseUrl;
 
-    public AlumnoController(HttpClient httpClient)
+    public AlumnoController(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
+        _apiBaseUrl = configuration["API:BaseUrl"];
     }
 
     public async Task<IActionResult> Index()
@@ -35,7 +37,8 @@ public class AlumnoController : Controller
 
     private async Task<List<Alumno>?> GetAlumnosAsync()
     {
-        var response = await _httpClient.GetAsync("http://localhost:5561/api/alumnos");
+        var apiUrl = $"{_apiBaseUrl}api/alumnos";
+        var response = await _httpClient.GetAsync(apiUrl);
 
         if (response.IsSuccessStatusCode)
         {

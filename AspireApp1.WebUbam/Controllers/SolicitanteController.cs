@@ -7,10 +7,12 @@ namespace AspireApp1.WebUbam.Controllers;
 public class SolicitanteController : Controller
 {
     private readonly HttpClient _httpClient;
+    private readonly string _apiUrl;
 
-    public SolicitanteController(HttpClient httpClient)
+    public SolicitanteController(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
+        _apiUrl = configuration["API:BaseUrl"] + "api/solicitante" ?? throw new ArgumentNullException(nameof(configuration), "La URL de la API no puede ser nula.");
     }
 
     public async Task<IActionResult> Index()
@@ -35,7 +37,7 @@ public class SolicitanteController : Controller
 
     private async Task<List<Solicitante>?> GetSolicitantesAsync()
     {
-        var response = await _httpClient.GetAsync("http://localhost:5561/api/solicitante");
+        var response = await _httpClient.GetAsync(_apiUrl);
 
         if (response.IsSuccessStatusCode)
         {
@@ -46,6 +48,6 @@ public class SolicitanteController : Controller
             });
         }
 
-        throw new Exception("Error al obtener solicitantes de la API.");
+        throw new Exception("Error al obtener solicitantes de la API:: " + response.StatusCode);
     }
 }

@@ -6,12 +6,14 @@ namespace AspireApp1.WebUbam.Controllers;
 public class AgregarAlumnoController : Controller
 {
     private readonly HttpClient _httpClient;
+    private readonly string? _apiBaseUrl;
 
-    public AgregarAlumnoController(IHttpClientFactory httpClientFactory)
+    public AgregarAlumnoController(IHttpClientFactory httpClientFactory, IConfiguration configuration)
     {
         _httpClient = httpClientFactory.CreateClient();
+        _apiBaseUrl = configuration["API:BaseUrl"];
     }
-    
+
     [HttpGet]
     public IActionResult Index()
     {
@@ -28,16 +30,21 @@ public class AgregarAlumnoController : Controller
 
         try
         {
-            var response = await _httpClient.PostAsJsonAsync("http://localhost:5561/api/alumnos", alumno);
+            var apiUrl = $"{_apiBaseUrl}api/alumnos";
+            var response = await _httpClient.PostAsJsonAsync(apiUrl, alumno);
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "AgregarAlumno");
-            }
-            else
-            {
-                ViewBag.Error = "Error al guardar el alumno en la API.";
+                var responseContent = await response.Content.ReadFromJsonAsync<CreateAlumnoResponse>();
+                
+                ViewBag.Usuario = responseContent.Usuario;
+                ViewBag.Contrasena = responseContent.Contrasena;
+                ViewBag.AlumnoCreado = true;
+
                 return View("Index", alumno);
             }
+
+            ViewBag.Error = "Error al guardar el alumno en la API.";
+            return View("Index", alumno);
         }
         catch (Exception ex)
         {

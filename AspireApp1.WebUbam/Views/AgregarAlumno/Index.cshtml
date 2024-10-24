@@ -82,20 +82,64 @@
     </div>
 </div>
 
+<!-- Modal para mostrar usuario y contraseña -->
+<div class="modal fade" id="usuarioModal" tabindex="-1" aria-labelledby="usuarioModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Usuario Creado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Nombre de Usuario:</strong> <span id="modalNombreUsuario"></span>
+                </p>
+                <p>
+                    <strong>Contraseña:</strong> <span id="modalContrasena"></span>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="modalOkButton">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 @section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        (function () {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            Array.from(forms).forEach(function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
+    (function () {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+        Array.from(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+
+        @if (ViewBag.AlumnoCreado != null && (bool)ViewBag.AlumnoCreado)
+        {
+            <text>
+        document.addEventListener('DOMContentLoaded', function () {
+            const usuario = '@ViewBag.Usuario';
+            const contrasena = '@ViewBag.Contrasena';
+
+            document.getElementById('modalNombreUsuario').innerText = usuario;
+            document.getElementById('modalContrasena').innerText = contrasena;
+
+            var usuarioModal = new bootstrap.Modal(document.getElementById('usuarioModal'));
+            usuarioModal.show();
+
+            document.getElementById('modalOkButton').addEventListener('click', function () {
+                window.location.href = '@Url.Action("Index", "Home")';
+            });
+        });
+        </text>
+        }
+    })()
+</script>
 }

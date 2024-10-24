@@ -6,6 +6,13 @@ namespace AspireApp1.WebUbam.Controllers;
 public class LoginController : Controller
 {
     private readonly HttpClient _httpClient;
+    private readonly string _apiUrl;
+
+    public LoginController(HttpClient httpClient, IConfiguration configuration)
+    {
+        _httpClient = httpClient;
+        _apiUrl = configuration["API:BaseUrl"] + "api/login" ?? throw new ArgumentNullException(nameof(configuration), "La URL de la API no puede ser nula.");
+    }
 
     [HttpGet]
     public IActionResult Index()
@@ -23,23 +30,19 @@ public class LoginController : Controller
 
         try
         {
-            var response = await _httpClient.PostAsJsonAsync("http://localhost:5561/api/login", login);
-            
+            var response = await _httpClient.PostAsJsonAsync(_apiUrl, login);
+
             if (response.IsSuccessStatusCode)
             {
+                Console.WriteLine("Inicio de sesión exitoso");
                 return RedirectToAction("Index", "Home");
             }
-            
-            Console.WriteLine("Inicio de sesión exitoso");
-            
-            ViewBag.Error = "Error al guardar el alumno en la API.";
-            
-            return View("Index", login);
+            ViewBag.Error = "Credenciales inválidas. Inténtalo de nuevo.";
         }
         catch (Exception ex)
         {
-            ViewBag.Error = $"Ocurrió un error: {ex.Message}";
-            return View("Index", login);
+            ViewBag.Error = $"Ocurrió un error al intentar iniciar sesión: {ex.Message}";
         }
+        return View("Index", login);
     }
 }

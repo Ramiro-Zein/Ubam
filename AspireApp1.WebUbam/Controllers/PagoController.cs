@@ -7,14 +7,12 @@ namespace AspireApp1.WebUbam.Controllers;
 public class PagoController : Controller
 {
     private readonly HttpClient _httpClient;
-    private readonly IConfiguration _configuration;
-    private readonly string? _apiUrl;
+    private readonly string _apiUrl;
 
     public PagoController(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
-        _configuration = configuration;
-        _apiUrl = "http://localhost:5561/api/pagos";
+        _apiUrl = configuration["API:BaseUrl"] + "api/pagos" ?? throw new ArgumentNullException(nameof(configuration), "La URL de la API no puede ser nula.");
     }
 
     public async Task<IActionResult> Index()
@@ -53,6 +51,6 @@ public class PagoController : Controller
         if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
             throw new Exception("No se encontraron pagos.");
 
-        throw new Exception("Error al obtener pagos de la API. Código de estado: " + response.StatusCode);
+        throw new Exception("Error al obtener pagos de la API: " + response.StatusCode);
     }
 }
