@@ -1,9 +1,8 @@
+using AspireApp1.ApiService.Controllers;
 using AspireApp1.ApiService.Database_Context;
-using AspireApp1.ApiService.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using MongoDB.Bson;
-using MongoDB.Driver;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,75 +10,58 @@ builder.AddServiceDefaults();
 builder.Services.AddProblemDetails();
 builder.Services.AddControllers();
 
-/*
- Commands
-    $Env:ASPNETCORE_ENVIRONMENT = "Production"
-    dotnet run --no-launch-profile
-    $Env:ASPNETCORE_ENVIRONMENT = "Development"
-    dotnet run
-
-if (builder.Environment.IsDevelopment())
-{
-    Console.WriteLine("Development: http://localhost:5561/api/mongodbstatus/status");
-    var mongoDbSettings = builder.Configuration.GetSection("MongoDbSettings").Get<MongoDbSettings>();
-
-    builder.Services.AddSingleton<IMongoClient>(sp =>
-    {
-        var settings = MongoClientSettings.FromConnectionString(mongoDbSettings?.ConnectionString);
-        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
-        var client = new MongoClient(settings);
-    
-        try
-        {
-            var database = client.GetDatabase("ubam").RunCommand<BsonDocument>(new BsonDocument("ping", 1));
-            Console.WriteLine("You successfully connected to MongoDB!");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex);
-        }
-
-        return client;
-    });
-    
-    builder.Services.AddScoped<IDatabaseContext, MongoDatabaseContext>();
-}
-else if (builder.Environment.IsProduction())
-{
-    Console.WriteLine("Production");
-    builder.Services.AddSqlServer<DatabaseContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
-    builder.Services.AddDbContext<DatabaseContext>(options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-    );
-}
-*/
-
-builder.Services.AddSqlServer<DatabaseContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
 builder.Services.AddDbContext<DatabaseContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5561")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();
+        });
+});
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
         options.LoginPath = "/api/login";
-        options.AccessDeniedPath = "/api/login/denied";
+        options.LogoutPath = "/api/logout";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        options.SlidingExpiration = true;
         options.Cookie.HttpOnly = true;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-        options.Cookie.SameSite = SameSiteMode.Strict;
-        options.Cookie.Name = "AspireAppAuth";
+        options.Cookie.SameSite = SameSiteMode.Lax;
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("Docente", policy => policy.RequireRole("Docente"));
+    options.AddPolicy("Alumno", policy => policy.RequireRole("Alumno"));
+});
+
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
-//app.UseCors("AllowAll");
-//app.UseAuthorization();
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
 
-// App
-app.UseExceptionHandler();
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseCors("AllowSpecificOrigin");
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
-app.MapDefaultEndpoints();
+
 app.Run();

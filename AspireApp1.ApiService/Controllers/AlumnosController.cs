@@ -41,11 +41,7 @@ public class AlumnosController : ControllerBase
         {
             Id_Usuario = Guid.NewGuid(),
             Nombre_Usuario = alumno.Nombre_Alumno,
-            Apellido_Paterno_Usuario = alumno.Apellido_Paterno_Alumno,
-            Apellido_Materno_Usuario = alumno.Apellido_Materno_Alumno,
-            FechaNacimiento_Usuario = alumno.Fecha_Nacimiento_Alumno,
             Contrasena_Usuario = contrasenaTemporal,
-            Rol_Usuario = Usuario.Rol.alumno
         };
 
         await _dbContext.Usuarios.AddAsync(usuario);

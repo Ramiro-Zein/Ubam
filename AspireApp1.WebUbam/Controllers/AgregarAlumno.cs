@@ -1,8 +1,10 @@
 ﻿using AspireApp1.WebUbam.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspireApp1.WebUbam.Controllers;
 
+[Authorize(Policy = "Admin")]
 public class AgregarAlumnoController : Controller
 {
     private readonly HttpClient _httpClient;

@@ -24,3 +24,16 @@ C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ServiceDefaul
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\refint\AspireApp1.ServiceDefaults.dll
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.pdb
 C:\Users\sopor\OneDrive\Documentos\Prácticas\Zein\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\ref\AspireApp1.ServiceDefaults.dll
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\bin\Debug\net8.0\AspireApp1.ServiceDefaults.deps.json
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\bin\Debug\net8.0\AspireApp1.ServiceDefaults.dll
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\bin\Debug\net8.0\AspireApp1.ServiceDefaults.pdb
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.csproj.AssemblyReference.cache
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.AssemblyInfoInputs.cache
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.AssemblyInfo.cs
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.csproj.CoreCompileInputs.cache
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.sourcelink.json
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.dll
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\refint\AspireApp1.ServiceDefaults.dll
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\AspireApp1.ServiceDefaults.pdb
+D:\ramir\UBAM\Universidad\UML\Ubam\AspireApp1.ServiceDefaults\obj\Debug\net8.0\ref\AspireApp1.ServiceDefaults.dll

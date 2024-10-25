@@ -1,9 +1,11 @@
 ﻿using System.Text.Json;
 using AspireApp1.WebUbam.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspireApp1.WebUbam.Controllers;
 
+[Authorize(Policy = "Admin")]
 public class SolicitanteController : Controller
 {
     private readonly HttpClient _httpClient;

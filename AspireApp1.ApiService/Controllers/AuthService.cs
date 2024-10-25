@@ -1,50 +1,71 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
+﻿using System.Security.Claims;
 using AspireApp1.ApiService.Database_Context;
 using AspireApp1.ApiService.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
 namespace AspireApp1.ApiService.Controllers;
+
+public interface IAuthService
+{
+    Task<LoginResponse> LoginAsync(LoginRequest request);
+    Task LogoutAsync();
+}
 
 public class AuthService : IAuthService
 {
     private readonly DatabaseContext _context;
-    private readonly IConfiguration _configuration;
+    private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public AuthService(DatabaseContext context, IConfiguration configuration)
+    public AuthService(DatabaseContext context, IHttpContextAccessor httpContextAccessor)
     {
         _context = context;
-        _configuration = configuration;
+        _httpContextAccessor = httpContextAccessor;
     }
 
-    public async Task<string> Authenticate(Login login)
+    public async Task<LoginResponse> LoginAsync(LoginRequest request)
     {
-        var user = await _context.Usuarios
-            .FirstOrDefaultAsync(u => u.Nombre_Usuario == login.Username && u.Contrasena_Usuario == login.Password);
+        var usuario = await _context.Usuarios.FirstOrDefaultAsync(u =>
+            u.Nombre_Usuario == request.Username &&
+            u.Contrasena_Usuario == request.Password);
 
-        if (user == null)
-            return null;
-
-        // Generar token JWT
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
-
-        var tokenDescriptor = new SecurityTokenDescriptor
+        if (usuario == null)
         {
-            Subject = new ClaimsIdentity(new Claim[]
+            return new LoginResponse
             {
-                new Claim(ClaimTypes.Name, user.Nombre_Usuario),
-                new Claim(ClaimTypes.Role, user.Rol_Usuario.ToString())
-            }),
-            Expires = DateTime.UtcNow.AddMinutes(double.Parse(_configuration["Jwt:ExpiresInMinutes"])),
-            Issuer = _configuration["Jwt:Issuer"],
-            Audience = _configuration["Jwt:Audience"],
-            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                Exitoso = false,
+                Mensaje = "Usuario o contraseña incorrectos."
+            };
+        }
+
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, usuario.Nombre_Usuario),
+            new Claim(ClaimTypes.Role, usuario.Rol_Usuario.ToString())
         };
 
-        var token = tokenHandler.CreateToken(tokenDescriptor);
-        return tokenHandler.WriteToken(token);
+        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        var authProperties = new AuthenticationProperties
+        {
+            IsPersistent = true 
+        };
+
+        await _httpContextAccessor.HttpContext.SignInAsync(
+            CookieAuthenticationDefaults.AuthenticationScheme,
+            new ClaimsPrincipal(claimsIdentity),
+            authProperties);
+
+        return new LoginResponse
+        {
+            Exitoso = true,
+            Rol = usuario.Rol_Usuario.ToString(),
+            Mensaje = "Bienvenido"
+        };
+    }
+
+    public async Task LogoutAsync()
+    {
+        await _httpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
     }
 }

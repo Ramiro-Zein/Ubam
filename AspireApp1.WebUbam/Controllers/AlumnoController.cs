@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AspireApp1.WebUbam.Models;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AspireApp1.WebUbam.Controllers;
 
+[Authorize(Policy = "AdminOrDocente")]
 public class AlumnoController : Controller
 {
     private readonly HttpClient _httpClient;

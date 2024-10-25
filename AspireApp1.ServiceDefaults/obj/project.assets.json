@@ -2208,19 +2208,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sopor\\.nuget\\packages\\": {}
+    "C:\\Users\\ramir\\.nuget\\packages\\": {},
+    "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
+      "projectUniqueName": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
       "projectName": "AspireApp1.ServiceDefaults",
-      "projectPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
-      "packagesPath": "C:\\Users\\sopor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sopor\\OneDrive\\Documentos\\Prácticas\\Zein\\Ubam\\AspireApp1.ServiceDefaults\\obj\\",
+      "projectPath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
+      "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
+      "outputPath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sopor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2300,7 +2305,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

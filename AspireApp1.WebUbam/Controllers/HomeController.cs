@@ -1,9 +1,12 @@
 using System.Diagnostics;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using AspireApp1.WebUbam.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AspireApp1.WebUbam.Controllers;
 
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -15,6 +18,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        var userName = User.Identity.Name;
+        var userRoles = User.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToList();
+
+        _logger.LogInformation("Usuario autenticado: {UserName}, Roles: {UserRoles}", userName, string.Join(", ", userRoles));
+
         return View();
     }
 

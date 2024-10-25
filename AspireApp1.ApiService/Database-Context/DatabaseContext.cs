@@ -123,33 +123,24 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         {
             Id_Usuario = Guid.Parse("702c2777-24a5-43ba-b05e-5ffe9a33b56a"),
             Nombre_Usuario = "Zein",
-            Apellido_Paterno_Usuario = "García",
-            Apellido_Materno_Usuario = "Hernández",
-            FechaNacimiento_Usuario = new DateTime(1990, 5, 12),
-            Contrasena_Usuario = "1234",
-            Rol_Usuario = Usuario.Rol.Admin
+            Rol_Usuario = Usuario.Rol.Admin,
+            Contrasena_Usuario = "1234"
         });
         
         usuariosInit.Add(new Usuario
         {
             Id_Usuario = Guid.Parse("702c2777-24a5-43ba-b05e-5ffe9a33b56b"),
             Nombre_Usuario = "Ana",
-            Apellido_Paterno_Usuario = "Martínez",
-            Apellido_Materno_Usuario = "López",
-            FechaNacimiento_Usuario = new DateTime(1992, 8, 23),
-            Contrasena_Usuario = "securepassword",
-            Rol_Usuario = Usuario.Rol.Docente
+            Rol_Usuario = Usuario.Rol.Docente,
+            Contrasena_Usuario = "securepassword"
         });
         
         usuariosInit.Add(new Usuario
         {
             Id_Usuario = Guid.Parse("702c2777-24a5-43ba-b05e-5ffe9a33b56c"),
             Nombre_Usuario = "Pedro",
-            Apellido_Paterno_Usuario = "Sánchez",
-            Apellido_Materno_Usuario = "Ramírez",
-            FechaNacimiento_Usuario = new DateTime(1988, 11, 5),
+            Rol_Usuario = Usuario.Rol.Alumno,
             Contrasena_Usuario = "pass456",
-            Rol_Usuario = Usuario.Rol.alumno
         });
         
         modelBuilder.Entity<Usuario>(usuario =>
@@ -157,11 +148,7 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
             usuario.ToTable("Usuario");
             usuario.HasKey(p => p.Id_Usuario);
             usuario.Property(p => p.Nombre_Usuario).IsRequired().HasMaxLength(200);
-            usuario.Property(p => p.Apellido_Paterno_Usuario);
-            usuario.Property(p => p.Apellido_Materno_Usuario);
-            usuario.Property(p => p.FechaNacimiento_Usuario).IsRequired();
             usuario.Property(p => p.Contrasena_Usuario).IsRequired().HasMaxLength(200);
-            usuario.Property(p => p.Rol_Usuario).IsRequired();
             usuario.HasData(usuariosInit);
         });
         

@@ -1,9 +1,11 @@
 ﻿using AspireApp1.WebUbam.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AspireApp1.WebUbam.Controllers;
 
+[Authorize(Policy = "Admin")]
 public class PagoController : Controller
 {
     private readonly HttpClient _httpClient;
