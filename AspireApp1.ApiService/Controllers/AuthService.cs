@@ -26,10 +26,14 @@ public class AuthService : IAuthService
 
     public async Task<LoginResponse> LoginAsync(LoginRequest request)
     {
-        var usuario = await _context.Usuarios.FirstOrDefaultAsync(u =>
-            u.Nombre_Usuario == request.Username &&
-            u.Contrasena_Usuario == request.Password);
-
+        var caseSensitiveCollation = "Latin1_General_CS_AS";
+        
+        var usuario = await _context.Usuarios
+            .FirstOrDefaultAsync(u => 
+                // EF.Functions.Collate aplica una collation específica (caseSensitiveCollation) para la comparación
+                EF.Functions.Collate(u.Nombre_Usuario, caseSensitiveCollation) == request.Username && 
+                EF.Functions.Collate(u.Contrasena_Usuario, caseSensitiveCollation) == request.Password);
+        
         if (usuario == null)
         {
             return new LoginResponse
@@ -48,7 +52,7 @@ public class AuthService : IAuthService
         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
         var authProperties = new AuthenticationProperties
         {
-            IsPersistent = true 
+            IsPersistent = true
         };
 
         await _httpContextAccessor.HttpContext.SignInAsync(

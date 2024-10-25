@@ -1,6 +1,5 @@
 ﻿namespace AspireApp1.ApiService.Models;
 
-// DTO para manejar el login
 public class LoginRequest
 {
     public string Nombre_Usuario { get; set; }

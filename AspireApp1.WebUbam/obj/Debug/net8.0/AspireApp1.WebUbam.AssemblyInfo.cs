@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspireApp1.WebUbam")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+365b80416d4bdd6f7a0831887b013b07e1d86d63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49399dd5b2e0ac1b48d2593a62a21a853c938f01")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspireApp1.WebUbam")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspireApp1.WebUbam")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -59,7 +59,6 @@ public class LoginController : Controller
             if (response.IsSuccessStatusCode)
             {
                 var loginResponse = await response.Content.ReadFromJsonAsync<LoginResponse>();
-
                 if (loginResponse != null && loginResponse.Rol != null)
                 {
                     var claims = new List<Claim>
