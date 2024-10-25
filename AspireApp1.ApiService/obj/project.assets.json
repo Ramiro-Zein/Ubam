@@ -6977,11 +6977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
+      "projectUniqueName": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
       "projectName": "AspireApp1.ApiService",
-      "projectPath": "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
+      "projectPath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
       "packagesPath": "C:\\Users\\ramir\\.nuget\\packages\\",
-      "outputPath": "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ApiService\\obj\\",
+      "outputPath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ApiService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7003,8 +7003,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
-              "projectPath": "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
+            "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj": {
+              "projectPath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj"
             }
           }
         }

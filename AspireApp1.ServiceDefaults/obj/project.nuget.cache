@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6kJ3Gk5apkw=",
+  "dgSpecHash": "yosye1bZU4g=",
   "success": true,
-  "projectFilePath": "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
+  "projectFilePath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ServiceDefaults\\AspireApp1.ServiceDefaults.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramir\\.nuget\\packages\\google.protobuf\\3.22.5\\google.protobuf.3.22.5.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",

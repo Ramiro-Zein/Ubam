@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IsFaEEiaJqM=",
+  "dgSpecHash": "QsJP793lqGA=",
   "success": true,
-  "projectFilePath": "D:\\ramir\\UBAM\\Universidad\\UML\\Ubam\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
+  "projectFilePath": "D:\\ramir\\UBAM\\Universidad\\UML\\UBAM\\AspireApp1.ApiService\\AspireApp1.ApiService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ramir\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ramir\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
